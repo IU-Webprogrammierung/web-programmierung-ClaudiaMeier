@@ -1,14 +1,11 @@
 /*Allgemeines Styling*/
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f9;
     color: #333;
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
 
 }
 
@@ -16,35 +13,25 @@ body {
 
 h1 {
     color: #1E90FF;
-    font-size: 3em;
-    text-align: center;
+    font-size: 2em;
     margin-top: 20px;
 }
 
 h2 {
     color: #444;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 10px;
-    text-align: center;
+}
+p {
+    text-align: justify;
 }
 
-/*Layout*/
-.container {
-    max-width: 1200px;
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-/*Responsives Design*/
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     h1 {
         font-size: 2em;
     }
-    h2 {
-        font-size: 1.5em;
+    p {
+        font-size: 1em;
     }
-    .container {
-        padding: 10px;
-    }
+
 }
