@@ -7,46 +7,53 @@
     <link rel="stylesheet" href="Styles/Styles.css">
 </head>
 <body>
-    
+    <header class ="header">
+        <h1>Reiseberichte</h1>
+    </header>
     <!--Navigation-->
-    <nav>
+    <nav class="navbar"> <!--Navigation, ist in den Stylesheets noch nicht angelegt-->
         <ul>
             <li><a tabindex="0" aria-current="page">Reiseberichte</a></li>
             <li><a href="index.html">Startseite</a></li>
-            <li><a href="Impressum.html">Impressum</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
             <li><a href="Fotografien.html">Fotografien</a></li>
             <li><a href="Bücher.html">Bücher</a></li>
         </ul>
-        </nav>
-    <!--Wo bin ich aktuell?-->
-    <h1>Die aktuelle Route vom 28.01.2025 - 02.03.2025 von Ushuaia nach Lyttleton</h1>
-    <p>Aktuell befinde ich mich auf dem Weg nach </p>
+    </nav>
 
-    <!--Was waren meine letzten Reisen / Was gab es spannendes? HotSpots? Etc-->    
-    <h2>Die letzten Reisen</h2>
-    <ul>
-        <li>10.01.2025 - 28.01.2025 von Ushuaia nach Ushuaia</li>
-        <li>21.12.2024 - 10.01.2025 von Ushuaia nach Ushuaia</li>
-        <li>05.12.2024 - 21.12.2024 von Ushuaia nach Ushuaia</li>
-        <li>20.11.2024 - 05.12.2024 von Valparaiso nach Ushuaia</li>
-        <ul>
-            <li><b>Puerto Eden, Chile</b></li>
-            <li><b>Puerto Natales, Chile</b></li>
-            <li><b>Punta Arenas, Chile</b></li>
-        </ul>
-        <li>04.11.2024 - 20.11.2024 von Colon nach Valparaiso</li>
-        <ul>
-            <li><b>Miraflores, Peru</b> Miraflores Indien Market - super süßer Freiluftmarkt mit Verkaufsständen für Souvenirs, Antiquitäten und Kunsthandwerk</li>
-            <li><b>Paracas, Peru</b>Buggytour durch die Sanddünen</li>
-            <li><b>Isla de la Plata, Ecuador</b> Naturschutzgebiet</li>
-            <li><b>Ensenadade Utria, Colombia</b></li>
-        </ul>
-    </ul>
+    <div class="Standort"> <!--Wo bin ich aktuell? Class in CSS noch nicht angelegt-->
+        <h2>Die aktuelle Route vom 28.01.2025 - 02.03.2025 von Ushuaia nach Lyttleton</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
 
-    <footer> 
-        <a href="AGB.html">AGB</a>
-        <a href="Datenschutz.html">Datenschutz</a>
-        <p>Copyright by Claudia Meier</p>
-    </footer>
+    <div class="zuletzt"> <!--Was waren meine letzten Reisen / Was gab es spannendes? HotSpots? In CSS noch nicht angelegt-->    
+        <h2>Die letzten Reisen</h2>
+            <ul>
+                <li>10.01.2025 - 28.01.2025 von Ushuaia nach Ushuaia</li>
+                <li>21.12.2024 - 10.01.2025 von Ushuaia nach Ushuaia</li>
+                <li>05.12.2024 - 21.12.2024 von Ushuaia nach Ushuaia</li>
+                <li>20.11.2024 - 05.12.2024 von Valparaiso nach Ushuaia</li>
+                    <ul>
+                        <li><b>Puerto Eden, Chile</b></li>
+                        <li><b>Puerto Natales, Chile</b></li>
+                        <li><b>Punta Arenas, Chile</b></li>
+                    </ul>
+                <li>04.11.2024 - 20.11.2024 von Colon nach Valparaiso</li>
+                    <ul>
+                        <li><b>Miraflores, Peru</b> Miraflores Indien Market - super süßer Freiluftmarkt mit Verkaufsständen für Souvenirs, Antiquitäten und Kunsthandwerk</li>
+                        <li><b>Paracas, Peru</b> Buggytour durch die Sanddünen, Sandbording durch die Dünen</li>
+                        <li><b>Isla de la Plata, Ecuador</b> Naturschutzgebiet, Ausflug zu den Blaufusstölpeln</li>
+                        <li><b>Ensenadade Utria, Colombia</b> Ausflug in den Nationalpark "Parque Nacional Natural Utria"</li>
+                    </ul>
+            </ul>
+        </div>
 </body>
+
+<footer class="footer"> 
+    <ul>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+        <li><a href="#">Datenschutz</a></li>   
+        <li><a href="#">Impressum</a></li>
+    </ul>
+</footer>
 </html>
