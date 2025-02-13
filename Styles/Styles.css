@@ -9,7 +9,7 @@ body {
 
 /*Navigation*/
 
-.navbar {
+.topnav {
     background-color: #333;
     color: #fff;
     padding: 15px 20px;
@@ -18,16 +18,16 @@ body {
     align-items: center;
 
 }
-.navbar ul {
+.topnav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-.navbar ul li {
+.topnav ul li {
     margin-right: 20px
 }
-.navbar ul li a {
+.topnav ul li a {
     color: #fff;
     text-decoration: none;
 
@@ -76,8 +76,8 @@ h2 {
     margin-top: 10px;
 }
 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
-    margin-bottom: 2em;
 }
 
 /*Classes*/ 
@@ -86,11 +86,26 @@ p {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: justify;
+    text-align: center;
 
 }
 
+/*Fotografien*/
+.galery img {
+    border-radius: 5px;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: scale-down;
+    object-position: 15% 100%;
+}
 
+.galery img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5) ;
+}
+
+.voyages ul {
+    list-style: none;
+}
 
 
 /*Responsives Design*/
