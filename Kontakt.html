@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
     <link rel="stylesheet" href="Styles/Styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class ="header">
+    <header class="header">
         <img src="img/2.png" alt="Logo" height="150px" width="150px">
         <nav class="topnav"> <!--Navigation, ist in den Stylesheets noch nicht angelegt-->
             <ul>
@@ -16,13 +19,13 @@
                 <li><a href="Fotografien.html">Fotografien</a></li>
                 <li><a href="Reiseberichte.html">Reiseberichte</a></li>
                 <li><b><a tabindex="0" aria-current="page">Kontakt</a></b></li>
-                
+
             </ul>
         </nav>
     </header>
 
- <!--Einbinden eines Kontaktformulars--> 
- <h4>Schreib mir eine Nachricht &#128151 </h4>  
+    <!--Einbinden eines Kontaktformulars-->
+    <h4>Schreib mir eine Nachricht &#128151 </h4>
     <form action="mailto:claudia.meier@iu-study.org" method="post" enctype="text/plain">
         <br>
         <label for="text">Name:</label><br>
@@ -33,18 +36,19 @@
 
         <label for="subject">Betreff:</label><br>
         <input type="text" id="subject" name="subject" required><br><br>
-        
+
         <label for="message">Ihre Nachricht:</label><br>
         <textarea id for="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
         <button type="submit">Absenden</button><br><br>
     </form>
 </body>
-<footer class="footer"> 
+<footer class="footer">
     <ul>
         <li><a href="Kontakt.html">Kontakt</a></li>
-        <li><a href="#">Datenschutz</a></li>   
+        <li><a href="#">Datenschutz</a></li>
         <li><a href="#">Impressum</a></li>
     </ul>
 </footer>
+
 </html>
