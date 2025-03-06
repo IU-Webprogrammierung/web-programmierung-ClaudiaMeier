@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -10,159 +10,221 @@
 </head>
 
 <body>
-
-    <header class="header">
-        <img src="img/2.png" alt="Logo" height="150px" width="150px">
-        <nav class="topnav"> <!--Navigation, ist in den Stylesheets noch nicht angelegt-->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="img/2.png" alt="Logo" class="Logo" height="150px" width="150px">
+            </a>
             <ul>
                 <li><a href="index.html">Über mich</a></li>
                 <li><a href="Bücher.html">Bücher</a></li>
-                <li><b><a tabindex="0" aria-current="page">Fotografien</a></b></li>
+                <li><a href="Fotografien.html">Fotografien</a></li>
                 <li><a href="Reiseberichte.html">Reiseberichte</a></li>
                 <li><a href="Kontakt.html">Kontakt</a></li>
-
             </ul>
         </nav>
     </header>
 
-    <!--Einbinden der Bilder nach Kategorie-->
-    <div class="galery">
-        <h2>Antarktis</h2>
-        <a href="img/Antarctic.jpeg">
-            <img src="img/Antarctic.jpeg" alt="Antarktis">
-        </a>
-        <a href="img/Antarctic_1.jpeg">
-            <img src="img/Antarctic_1.jpeg" alt="Antarktis">
-        </a>
-        <a href="img/Antarctic_2.jpeg">
-            <img src="img/Antarctic_2.jpeg" alt="Antarktis">
-        </a>
-        <a href="img/NewIsland.jpeg">
-            <img src="img/NewIsland.jpeg" alt="NewIsland">
-        </a>
-        <a href="img/Ushuaia.jpeg">
-            <img src="img/Ushuaia.jpeg" alt="Ushuaia">
-        </a>
-        <a href="img/Antarctic_3.jpeg">
-            <img src="img/Antarctic_3.jpeg" alt="Antarctic_3">
-        </a>
-        <a href="img/DamoyPoint.jpeg">
-            <img src="img/DamoyPoint.jpeg" alt="DamoyPoint">
-        </a>
-        <a href="img/DeceptionIsland.jpeg">
-            <img src="img/DeceptionIsland.jpeg" alt="DeceptionIsland">
-        </a>
+    <main>
+        <!--Einbinden der Bilder nach Kategorie-->
+        <div class="gallery-container">
+            <h1>Foto-Galerie</h1>
 
-        <h2>Arktis</h2>
-        <a href="img/Arktis.jpeg">
-            <img src="img/Arktis.jpeg" alt="Arktis">
-        </a>
-        <a href="img/Arktis_1.jpeg">
-            <img src="img/Arktis_1.jpeg" alt="Arktis">
-        </a>
-        <a href="img/Arktis_2.jpeg">
-            <img src="img/Arktis_2.jpeg" alt="Arktis">
-        </a>
-        <a href="img/Arktis_3.jpeg">
-            <img src="img/Arktis_3.jpeg" alt="Arktis_3">
-        </a>
-        <a href="img/Ny-Alesund_1.jpeg">
-            <img src="img/Ny-Alesund_1.jpeg" alt="Ny-Alesund">
-        </a>
-        <a href="img/Arktis_4.jpeg">
-            <img src="img/Arktis_4.jpeg" alt="Arktis_4">
-        </a>
+            <section class="gallery-category">
+                <h2>Antarktis</h2>
+                <div class="gallery">
+                    <a href="img/Antarctic.jpeg">
+                        <img src="img/Thumbnail/Antarctic_thumb.jpg"
+                            alt="Eine Rückenflosse eines Finnwals in der Antarktis in der Paradis Bay Bucht">
+                    </a>
+                    <a href="img/Antarctic_1.jpeg">
+                        <img src="img/Thumbnail/Antarctic_1_thumb.jpg"
+                            alt="Ein kleines Fischerboot vor der Brown Station in der Paradis Bay Bucht">
+                    </a>
+                    <a href="img/Antarctic_2.jpeg">
+                        <img src="img/Thumbnail/Antarctic_2_thumb.jpg" alt="Ein großer Schelf-Eisberg im Weddel-Meer">
+                    </a>
+                    <a href="img/NewIsland.jpeg">
+                        <img src="img/Thumbnail/NewIsland_thumb.jpg"
+                            alt="Rockhopper Pinguine an der Küste von NewIsland">
+                    </a>
+                    <a href="img/Ushuaia.jpeg">
+                        <img src="img/Thumbnail/Ushuaia_thumb.jpg" alt="Sonnenuntergang in Ushuaia, Argentinien">
+                    </a>
+                    <a href="img/Antarctic_3.jpeg">
+                        <img src="img/Thumbnail/Antarctic_3_thumb.jpg"
+                            alt="Durchfahrt durch den Lemaire Channel, Antarktis">
+                    </a>
+                    <a href="img/DamoyPoint.jpeg">
+                        <img src="img/Thumbnail/DamoyPoint_thumb.jpg" alt="Brütende Eselspinguine in DamoyPoint">
+                    </a>
+                    <a href="img/DeceptionIsland.jpeg">
+                        <img src="img/Thumbnail/DeceptionIsland_thumb.jpg"
+                            alt="Überreste einer alten Walfangstation auf Whalers Bay, Deception Island">
+                    </a>
+                </div>
+            </section>
 
-        <h2>Amazonas</h2>
-        <a href="img/Amazonas_3.jpeg">
-            <img src="img/Amazonas_3.jpeg" alt="Amazonas">
-        </a>
-        <a href="img/Amazonas_1.jpeg">
-            <img src="img/Amazonas_1.jpeg" alt="Amazonas">
-        </a>
-        <a href="img/Amazonas_2.jpeg">
-            <img src="img/Amazonas_2.jpeg" alt="Amazonas">
-        </a>
-        <a href="img/Amazonas_4.jpeg">
-            <img src="img/Amazonas_4.jpeg" alt="Amazonas_4">
-        </a>
-        <a href="img/Belem.jpeg">
-            <img src="img/Belem.jpeg" alt="Belem">
-        </a>
+            <section class="gallery-category">
+                <h2>Arktis</h2>
+                <div class="gallery">
+                    <a href="img/Arktis.jpeg">
+                        <img src="img/Thumbnail/Arktis_thumb.jpg"
+                            alt="Eine Walross Kolonie auf den Pooleynten, Svalbard">
+                    </a>
+                    <a href="img/Arktis_1.jpeg">
+                        <img src="img/Thumbnail/Arktis_1_thumb.jpg"
+                            alt="Schneebedeckte Berge in Sonnenschein, bei Smeerenburg, Svalbard">
+                    </a>
+                    <a href="img/Arktis_2.jpeg">
+                        <img src="img/Thumbnail/Arktis_2_thumb.jpg"
+                            alt="Schneebedeckte Berge in Sonnenschein, bei Smeerenburg, Svalbard">
+                    </a>
+                    <a href="img/Arktis_3.jpeg">
+                        <img src="img/Thumbnail/Arktis_3_thumb.jpg"
+                            alt="Eine Gletscherfront bei Sonnenschein in Alkefjellet, Svalbard">
+                    </a>
+                    <a href="img/Ny-Alesund_1.jpeg">
+                        <img src="img/Thumbnail/Ny-Alesund_1_thumb.jpg"
+                            alt="Ein grasendes Rentier in Ny-Alesund, Svalbard">
+                    </a>
+                    <a href="img/Arktis_4.jpeg">
+                        <img src="img/Thumbnail/Arktis_4_thumb.jpg"
+                            alt="Schwimmendes Eis, bei der Packeisgrenze im arktischen Gewässer">
+                    </a>
+                </div>
+            </section>
 
-        <h2>Brasilien</h2>
-        <a href="img/ElSalvador.jpeg">
-            <img src="img/ElSalvador.jpeg" alt="ElSalvador">
-        </a>
-        <a href="img/Salvador.jpeg">
-            <img src="img/Salvador.jpeg" alt="Salvador">
-        </a>
-        <a href="img/Salvador_1.jpeg">
-            <img src="img/Salvador_1.jpeg" alt="Salvador">
-        </a>
-        <a href="img/Rio.jpeg">
-            <img src="img/Rio.jpeg" alt="Rio">
-        </a>
-        <a href="img/Rio_1.jpeg">
-            <img src="img/Rio_1.jpeg" alt="Rio_1">
-        </a>
-        <a href="img/Manaus.jpeg">
-            <img src="img/Manaus.jpeg" alt="Manaus">
-        </a>
+            <section class="gallery-category">
+                <h2>Amazonas</h2>
+                <div class="gallery">
+                    <a href="img/Amazonas_3.jpeg">
+                        <img src="img/Thumbnail/Amazonas_3_thumb.jpg"
+                            alt="Schwarz-Weiß Aufnahme einer Show von Einheimischen im Amazonas.">
+                    </a>
+                    <a href="img/Amazonas_1.jpeg">
+                        <img src="img/Thumbnail/Amazonas_1_thumb.jpg"
+                            alt="Ein kleines Holzhaus im Regenwald, mit kleinem Fischerboot an der Seite">
+                    </a>
+                    <a href="img/Amazonas_2.jpeg">
+                        <img src="img/Thumbnail/Amazonas_2_thumb.jpg"
+                            alt="Farbenfrohes Boi-Bumba Festival, Folklore Show, in Parintis, Amazonas ">
+                    </a>
+                    <a href="img/Amazonas_4.jpeg">
+                        <img src="img/Thumbnail/Amazonas_4_thumb.jpg"
+                            alt="Ein Totenkopfaffen Mama mit Kind auf dem Rücken im Amazonas">
+                    </a>
+                    <a href="img/Belem.jpeg">
+                        <img src="img/Thumbnail/Belem_thumb.jpg"
+                            alt="Fischerboote auf trockenem Grund im Marktgebiet bei Belem, Brasilien">
+                    </a>
+                </div>
+            </section>
 
-        <h2>Chile</h2>
-        <a href="img/PioXI_Glacier.jpeg">
-            <img src="img/PioXI_Glacier.jpeg" alt="PioXI_Glacier">
-        </a>
-        <a href="img/PioXI_Glacier_1.jpeg">
-            <img src="img/PioXI_Glacier_1.jpeg" alt="PioXI_Glacier">
-        </a>
-        <a href="img/Chile_Glacier.jpeg">
-            <img src="img/Chile_Glacier.jpeg" alt="Chile_Glacier">
-        </a>
-        <a href="img/PioXI_Glacier_2.jpeg">
-            <img src="img/PioXI_Glacier_2.jpeg" alt="PioXI_Glacier">
-        </a>
-        <a href="img/Chile.jpeg">
-            <img src="img/Chile.jpeg" alt="Chile">
-        </a>
-        <a href="img/PuntaArenas.jpeg">
-            <img src="img/PuntaArenas.jpeg" alt="PuntaArenas">
-        </a>
-        <a href="img/Chile_2.jpeg">
-            <img src="img/Chile_2.jpeg" alt="Chile_2">
-        </a>
+            <section class="gallery-category">
+                <h2>Brasilien</h2>
+                <div class="gallery">
+                    <a href="img/ElSalvador.jpeg">
+                        <img src="img/Thumbnail/ElSalvador_thumb.jpg"
+                            alt="Koloniale Architektur im Pelourinho, UNESCO Weltkulturerbe, Salvador, Brasilien">
+                    </a>
+                    <a href="img/Salvador.jpeg">
+                        <img src="img/Thumbnail/Salvador_thumb.jpg"
+                            alt="Gelbes Koloniales Gebäude in Salvador, Brasilien">
+                    </a>
+                    <a href="img/Salvador_1.jpeg">
+                        <img src="img/Thumbnail/Salvador_1_thumb.jpg"
+                            alt="Eingang der Basilika Santuario, Katholische Kirche, Salvador, Brasilien">
+                    </a>
+                    <a href="img/Rio.jpeg">
+                        <img src="img/Thumbnail/Rio_thumb.jpg"
+                            alt="Ein Cargo Schiff, bei Sonnenaufgang in Rio, Brasilien">
+                    </a>
+                    <a href="img/Rio_1.jpeg">
+                        <img src="img/Thumbnail/Rio_1_thumb.jpg"
+                            alt="Sonnenaufgang in Rio, mit einem kleinen Fischerboot in der Ferne in Rio, Brasilien">
+                    </a>
+                    <a href="img/Manaus.jpeg">
+                        <img src="img/Thumbnail/Manaus_thumb.jpg"
+                            alt="Stand eines Straßenmarketes in Manaus, Brasilien">
+                    </a>
+                </div>
+            </section>
 
+            <section class="gallery-category">
+                <h2>Chile</h2>
+                <div class="gallery">
+                    <a href="img/PioXI_Glacier.jpeg">
+                        <img src="img/Thumbnail/PioXI_Glacier_thumb.jpg"
+                            alt="Drohnenaufnahme des PioXI Gletschers, der Gletscher auf der  rechten Seite, mit Bergen im Hintergrund">
+                    </a>
+                    <a href="img/PioXI_Glacier_1.jpeg">
+                        <img src="img/Thumbnail/PioXI_Glacier_1_thumb.jpg"
+                            alt="Drohnenaufnahme des PioXI Gletschers, die Gletschefront von oben">
+                    </a>
+                    <a href="img/Chile_Glacier.jpeg">
+                        <img src="img/Thumbnail/Chile_Glacier_thumb.jpg"
+                            alt="Ein Gletscher in den chilenischen Fjorden, bei Sonnenuntergang mit Gestein">
+                    </a>
+                    <a href="img/PioXI_Glacier_2.jpeg">
+                        <img src="img/Thumbnail/PioXI_Glacier_2_thumb.jpg"
+                            alt="Horizontale Drohnenaufnahme der PioXI Gletscherfront">
+                    </a>
+                    <a href="img/Chile.jpeg">
+                        <img src="img/Thumbnail/Chile_thumb.jpg"
+                            alt="Eine in Nebel gehüllte Bergspitze in den chilenischen Fjorden">
+                    </a>
+                    <a href="img/PuntaArenas.jpeg">
+                        <img src="img/Thumbnail/PuntaArenas_thumb.jpg"
+                            alt="Drohnenaufnahme eines alten Landungssteges am Hafen von Punta Arenas, Chile, mit Schiffen im Hintergrund">
+                    </a>
+                    <a href="img/Chile_2.jpeg">
+                        <img src="img/Thumbnail/Chile_2_thumb.jpg"
+                            alt="Schneebedeckte Berge am Ufer von Puerto Natals, Chile">
+                    </a>
+                </div>
+            </section>
 
-        <h2>Thailand</h2>
-        <a href="img/Ayutthaya.jpeg">
-            <img src="img/Ayutthaya.jpeg" alt="Ayutthaya">
-        </a>
-        <a href="img/Ayutthaya_1.jpeg">
-            <img src="img/Ayutthaya_1.jpeg" alt="Ayutthaya">
-        </a>
-        <a href="img/Ayutthaya_2.jpeg">
-            <img src="img/Ayutthaya_2.jpeg" alt="Ayutthaya">
-        </a>
-        <a href="img/Ayutthaya_3.jpeg">
-            <img src="img/Ayutthaya_3.jpeg" alt="Ayutthaya">
-        </a>
-        <a href="img/Thailand.jpeg">
-            <img src="img/Thailand.jpeg" alt="Thailand">
-        </a>
-        <a href="img/FloatingMarket.jpeg">
-            <img src="img/FloatingMarket.jpeg" alt="FloatingMarket">
-        </a>
-    </div>
+            <section class="gallery-category">
+                <h2>Thailand</h2>
+                <div class="gallery">
+                    <a href="img/Ayutthaya.jpeg">
+                        <img src="img/Thumbnail/Ayutthaya_thumb.jpg"
+                            alt="Alte Buddha Statue in Gold, Aytthaya, Thailand">
+                    </a>
+                    <a href="img/Ayutthaya_1.jpeg">
+                        <img src="img/Thumbnail/Ayutthaya_1_thumb.jpg"
+                            alt="Die markanten drei Stupas in der Mitte des Wat Phra Si Sanphet, Ayutthaya, Thailand">
+                    </a>
+                    <a href="img/Ayutthaya_2.jpeg">
+                        <img src="img/Thumbnail/Ayutthaya_2_thumb.jpg"
+                            alt="Alte Buddha Statue mit gelben Tuch bedeckt im Wat Yai Chai Mongkol Tempel, Aytthaya, Thailand">
+                    </a>
+                    <a href="img/Ayutthaya_3.jpeg">
+                        <img src="img/Thumbnail/Ayutthaya_3_thumb.jpg"
+                            alt="Eingewachsener Steinkopf des Buddhas, Wat Mahathat, Ayutthaya, Thailand">
+                    </a>
+                    <a href="img/Thailand.jpeg">
+                        <img src="img/Thumbnail/Thailand_thumb.jpg"
+                            alt="Mae Klong Railway Market, Samut Songhkram, Bangkok, Thailand">
+                    </a>
+                    <a href="img/FloatingMarket.jpeg">
+                        <img src="img/Thumbnail/FloatingMarket_thumb.jpg"
+                            alt="Floating Market in Khlong Lat Mayom, Bangkok, Thailand">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <a href="#top">Nach Oben</a>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Impressum</a></li>
+        </ul>
+    </footer>
 
 </body>
-
-<footer class="footer">
-    <ul>
-        <li><a href="Kontakt.html">Kontakt</a></li>
-        <li><a href="#">Datenschutz</a></li>
-        <li><a href="#">Impressum</a></li>
-    </ul>
-</footer>
 
 </html>

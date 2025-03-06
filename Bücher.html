@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -10,84 +10,100 @@
 </head>
 
 <body>
-    <header class="header">
-        <img src="img/2.png" alt="Logo" height="150px" width="150px">
-        <nav class="topnav"> <!--Navigation, ist in den Stylesheets noch nicht angelegt-->
-            <ul>
-                <li><a href="index.html">Über mich</a></li>
-                <li><b><a tabindex="0" aria-current="page">Bücher</a></b></li>
-                <li><a href="Fotografien.html">Fotografien</a></li>
-                <li><a href="Reiseberichte.html">Reiseberichte</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main>
+        <header>
+            <nav>
+                <a href="index.html">
+                    <img src="img/2.png" alt="Logo" class="Logo" height="150px" width="150px">
+                </a>
+                <ul>
+                    <li><a href="index.html">Über mich</a></li>
+                    <li><a href="Bücher.html">Bücher</a></li>
+                    <li><a href="Fotografien.html">Fotografien</a></li>
+                    <li><a href="Reiseberichte.html">Reiseberichte</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <h2>Das lese ich aktuell:</h2>
-    <div class="book-item">
-        <img src="img/BodoSchäfer.jpg" alt="BodoSchäfer" width="150px" height="150px">
-        <div class="book-description">
-            <p><b>Bodo Schäfer - Die Gesetze der Gewinner</b></p>
-            <p>Erfolg und ein erfülltes Leben. Diese Ziele haben wir alle. Doch oft geben wir uns mit zu wenig
-                zufrieden. Unsere Visionen, unsere Träume werden von Verpflichtungen, Frustrationen oder dem
-                Alltagsgeschäft überlagert. Genau hier setzt das Coaching von Bodo Schäfer ein. Er hat 30 leicht
-                nachvollziehbare Strategien entwickelt und erprobt, die beruflichen und persönlichen Erfolg befördern.
-                Jedes Gesetz wird ausführlich erklärt und enthält einen Praxisteil mit Aufgaben und Übungen, die der
-                Leser gleich ausprobieren und umsetzen kann. So kann man Tag für Tag feststellen, wie sich die eigenen
-                Verhaltensweisen und die Sicht auf die Welt ändern innerhalb nur eines Monats.</p>
-        </div>
-    </div>
-
-    <div class="booklatest">
-        <h2>Das habe ich zuletzt gelesen:</h2>
-        <div class="book-item">
-            <img src="img/MichelleAdams.jpg" alt="MichelleAdams" width="150px" height="150px">
+        <h1>Meine Bücher</h1>
+        <h2>Das lese ich aktuell:</h2>
+        <div class="book-item"> <!--Buch, welches ich aktuell lese-->
+            <img src="img/BodoSchäfer.jpg" alt="BodoSchäfer" width="150px" height="150px">
             <div class="book-description">
-                <p><b>Michelle Adams - Die Sammlerin der Erinnerungen</b></p>
-                <p>Ein kleines Dorf in Südfrankreich in den 80er-Jahren: Für die junge Frances ist Benoit die erste
-                    große Liebe und der gemeinsam verlebte Sommer erscheint ihr unendlich. Doch dann vertraut ihr Benoit
-                    ein Geheimnis an, das sie für immer trennen wird. 2022, Cotswolds, England: Harry Langley löst den
-                    Haushalt seiner verstorbenen Mutter Frances auf, die ihm ein Vermächtnis hinterlassen hat. Gemeinsam
-                    mit seiner Exfreundin Tabitha, einer Kunsthistorikerin, soll er nach einer wertvollen Schatulle
-                    suchen...</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="recommends">
-        <h3>Das sind meine Empfehlungen:</h3>
-        <div class="book-item">
-            <img src="img/PauloCoelho.jpg" alt="PauloCoelho" width="150px" height="150px">
-            <div class="book-description">
-                <p><b>Paulo Coelho - Der Alchimist</b></p>
-                <p>Der Alchimist von Paulo Coelho erzählt die Reise des Hirten Santiago, der einem Traum folgt und nach
-                    einem Schatz in Ägypten sucht. Auf seinem Weg lernt er, dass der wahre Schatz nicht materiell ist,
-                    sondern in der Verwirklichung seiner Träume und der Entdeckung seiner „persönlichen Legende“ liegt.
-                </p>
+                <p><b>Bodo Schäfer - Die Gesetze der Gewinner</b></p>
+                <p>Erfolg und ein erfülltes Leben. Diese Ziele haben wir alle. Doch oft geben wir uns mit zu wenig
+                    zufrieden. Unsere Visionen, unsere Träume werden von Verpflichtungen, Frustrationen oder dem
+                    Alltagsgeschäft überlagert. Genau hier setzt das Coaching von Bodo Schäfer ein. Er hat 30 leicht
+                    nachvollziehbare Strategien entwickelt und erprobt, die beruflichen und persönlichen Erfolg
+                    befördern.
+                    Jedes Gesetz wird ausführlich erklärt und enthält einen Praxisteil mit Aufgaben und Übungen, die der
+                    Leser gleich ausprobieren und umsetzen kann. So kann man Tag für Tag feststellen, wie sich die
+                    eigenen
+                    Verhaltensweisen und die Sicht auf die Welt ändern innerhalb nur eines Monats.</p>
             </div>
         </div>
 
-        <div class="book-item">
-            <img src="img/ClaraBagus.jpg" alt="ClaraBagus" width="150px" height="150px">
-            <div class="book-description">
-                <p><b>Clara Maria Bagus - Die Farbe von Glück</b></p>
-                <p>Eine falsche Entscheidung, die das Leben dreier Familien für immer verändert: Ein Richter zwingt die
-                    Krankenschwester Charlotte, sein sterbenskrankes Neugeborenes gegen ein gesundes zu tauschen...</p>
+        <div class="booklatest">
+            <h2>Das habe ich zuletzt gelesen:</h2>
+            <div class="book-item"> <!--Zuletzt gelesenes Buch-->
+                <img src="img/MichelleAdams.jpg" alt="MichelleAdams" width="150px" height="150px">
+                <div class="book-description">
+                    <p><b>Michelle Adams - Die Sammlerin der Erinnerungen</b></p>
+                    <p>Ein kleines Dorf in Südfrankreich in den 80er-Jahren: Für die junge Frances ist Benoit die erste
+                        große Liebe und der gemeinsam verlebte Sommer erscheint ihr unendlich. Doch dann vertraut ihr
+                        Benoit
+                        ein Geheimnis an, das sie für immer trennen wird. 2022, Cotswolds, England: Harry Langley löst
+                        den
+                        Haushalt seiner verstorbenen Mutter Frances auf, die ihm ein Vermächtnis hinterlassen hat.
+                        Gemeinsam
+                        mit seiner Exfreundin Tabitha, einer Kunsthistorikerin, soll er nach einer wertvollen Schatulle
+                        suchen...</p>
+                </div>
             </div>
         </div>
 
-        <div class="book-item">
-            <img src="img/BriannaWiest.jpg" alt="BriannaWiest" width="150px" height="150px">
-            <div class="book-description">
-                <p><b>Brianna Wiest - 101 Essays, die dein Leben verändern werden</b></p>
-                <p>101 Essays, die dein Leben verändern werden“ von Brianna Wiest bietet eine Sammlung von Essays, die
-                    den Leser zur Selbstreflexion anregen...</p>
+        <div class="recommends">
+            <h3>Das sind meine Empfehlungen:</h3>
+            <div class="book-item"> <!--Empfehlungen-->
+                <img src="img/PauloCoelho.jpg" alt="PauloCoelho" width="150px" height="150px">
+                <div class="book-description">
+                    <p><b>Paulo Coelho - Der Alchimist</b></p>
+                    <p>Der Alchimist von Paulo Coelho erzählt die Reise des Hirten Santiago, der einem Traum folgt und
+                        nach
+                        einem Schatz in Ägypten sucht. Auf seinem Weg lernt er, dass der wahre Schatz nicht materiell
+                        ist,
+                        sondern in der Verwirklichung seiner Träume und der Entdeckung seiner „persönlichen Legende“
+                        liegt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="book-item">
+                <img src="img/ClaraBagus.jpg" alt="ClaraBagus" width="150px" height="150px">
+                <div class="book-description">
+                    <p><b>Clara Maria Bagus - Die Farbe von Glück</b></p>
+                    <p>Eine falsche Entscheidung, die das Leben dreier Familien für immer verändert: Ein Richter zwingt
+                        die
+                        Krankenschwester Charlotte, sein sterbenskrankes Neugeborenes gegen ein gesundes zu tauschen...
+                    </p>
+                </div>
+            </div>
+
+            <div class="book-item">
+                <img src="img/BriannaWiest.jpg" alt="BriannaWiest" width="150px" height="150px">
+                <div class="book-description">
+                    <p><b>Brianna Wiest - 101 Essays, die dein Leben verändern werden</b></p>
+                    <p>101 Essays, die dein Leben verändern werden“ von Brianna Wiest bietet eine Sammlung von Essays,
+                        die
+                        den Leser zur Selbstreflexion anregen...</p>
+                </div>
             </div>
         </div>
-        <!-- Weitere Bücher können auf ähnliche Weise hinzugefügt werden -->
-    </div>
+        <a href="#top">Nach Oben</a>
+    </main>
 
-    <footer class="footer">
+    <footer>
         <ul>
             <li><a href="Kontakt.html">Kontakt</a></li>
             <li><a href="#">Datenschutz</a></li>
