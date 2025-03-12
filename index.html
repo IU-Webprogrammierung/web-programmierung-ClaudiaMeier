@@ -4,36 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Claudia Meier</title>
     <link rel="stylesheet" href="Styles/Styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio - Claudia Meier</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <img class="header_image" src="img/background_img.jpeg" alt="Logo">
+        <div class="nav">
+            <a href="index.html">
+                <img src="img/Logo.png" width="120px" height="120px">
+            </a>
+            <div>
+                <a href="index.html">Über mich</a>
+                <a href="Bücher.html">Bücher</a>
+                <a href="Fotografien.html">Fotografien</a>
+                <a href="Reisen.html">Reisen</a>
+                <a class="nav-btn" href="Kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <h1>Portfolio</h1>
+    </header>
     <main>
-        <header>
-            <nav>
-                <a href="index.html">
-                    <img src="img/2.png" alt="Logo" class="Logo" height="150px" width="150px">
-                </a>
-                <ul>
-                    <li><a href="index.html">Über mich</a></li>
-                    <li><a href="Bücher.html">Bücher</a></li>
-                    <li><a href="Fotografien.html">Fotografien</a></li>
-                    <li><a href="Reiseberichte.html">Reiseberichte</a></li>
-                    <li><a href="Kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="info"> <!-- Über mich Info -->
-            <h1>Portfolio</h1>
-            <h3>Über mich</h3>
-            <div class="info-text">
-                <img src="img/Avatar.jpg" alt="Avatar" width="150px" height="150px">
+        <h2>Über mich</h2> <!-- Über mich Info -->
+        <div class="about_me">
+            <img class="Avatar" src="img/Avatar.jpg" alt="Avatar" width="200px" height="200px">
+            <div class="about_me_text">
                 <p>Hi, ich bin Claudia! Momentan befinde ich mich in der Antarktis und auf dem Weg nach Lyttleton,
-                    Neuseeland.
-                    <br> Ich habe eine große Leidenschaft fürs Fotografieren - sowohl mit der Kamera als auch mit meiner
+                    Neuseeland.Ich habe eine große Leidenschaft fürs Fotografieren - sowohl mit der Kamera als auch mit
+                    meiner
                     Drohne.
                     Es fasziniert mich, die Welt aus unterschiedlichen Perspektiven festzuhalten und einzigartige
                     Momente
@@ -44,32 +49,34 @@
                 </p>
             </div>
         </div>
-
-        <div class="socialmedia"> <!--Social Media Links-->
-            <h3>Social Media</h3>
-            <ul>
-                <li>LinkedIn:</li>
-            </ul>
-        </div>
-
+        <h2>Aufgabe</h2>
         <div class="Aufgabenstellung"> <!--Kurze  Zusammenfassung der Aufgabe / Arbeit -->
-            <h3>Aufgabe</h3>
-            <p>Die Aufgabe hinter dieser Website ist es, eine einfache, statische Website zu erstellen, die interessante
-                Informationen über mich und meine Interessen teilt. Das Ziel war es, eine benutzerfreundliche und
-                responsive
-                Seite zu gestalten, die sowohl auf Mobilgeräten als auch auf PCs gut aussieht. <br> Die Seite wurde mit
-                HTML
-                und CSS umgesetzt und nutzt Techniken wie Flexbox, Grid und Media Queries, um sicherzustellen, dass das
-                Design auf verschiedenen Bildschirmgrößen optimal dargestellt wird.
-            </p>
+            <div>
+                <p>Die Aufgabe hinter dieser Website ist es, eine einfache, statische Website zu erstellen, die
+                    interessante
+                    Informationen über mich und meine Interessen teilt. Das Ziel war es, eine benutzerfreundliche und
+                    responsive Seite zu gestalten, die sowohl auf Mobilgeräten als auch auf PCs gut aussieht.Seite wurde
+                    mit HTML und CSS umgesetzt und nutzt Techniken wie Flexbox, Grid und Media Queries, um
+                    sicherzustellen, dass das
+                    Design auf verschiedenen Bildschirmgrößen optimal dargestellt wird.
+                </p>
+            </div>
         </div>
+        <h2>Follow Me</h2>
+        <div class="socialmedia"> <!--Social Media Links-->
+            <div>
+                <a href="#">LinkedIn Profil</a> | <a href="#">Instagram Profil</a> | <a href="#">Facebook</a>
+            </div>
+        </div>
+        <a href="#top" class="btn-top">
+            <img src="img/Pfeil.png" alt="Pfeil nach oben">
+        </a>
     </main>
     <footer>
-        <ul>
-            <li><a href="Kontakt.html">Kontakt</a></li>
-            <li><a href="#">Datenschutz</a></li>
-            <li><a href="#">Impressum</a></li>
-        </ul>
+        <a href="#">&copy copyright by Claudia</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">Impressum</a>
+        <a href="Kontakt.html">Kontakt</a>
     </footer>
 </body>
 
