@@ -17,7 +17,7 @@ h1 {
     left: 50px;
     top: 200px;
     color: white;
-    font-size: 100px;
+    font-size: 4em;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
@@ -77,9 +77,11 @@ h3 {
 
 .header_image {
     width: 100%;
+    min-height: 300px;
     height: 50vh;
     object-fit: cover;
     border-radius: 0px;
+    object-position: center;
     filter: brightness(0.4);
 }
 
@@ -97,6 +99,7 @@ h3 {
 /*FOOTER*/
 
 footer {
+    width: 100%;
     padding: 30px;
     background: rgb(110, 145, 120);
     margin-top: 20px;
@@ -116,9 +119,9 @@ footer a:hover {
 
 /*ABOUT ME SEITE*/
 .about_me {
+    display: flex;
     align-items: center;
     height: 300px;
-    display: flex;
     padding: 20px 100px;
     gap: 200px;
 
@@ -136,6 +139,8 @@ img.Avatar {
 }
 
 .socialmedia {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -192,10 +197,21 @@ img.Avatar {
     min-height: 800px;
 }
 
+.book-item_recommends {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    min-height: 800px;
+}
+
 .book_img {
     border-radius: 5px;
     transform: scale(0.5);
 }
+
+
 
 /*Galerie*/
 
@@ -296,7 +312,9 @@ figure:hover figcaption {
 
 .world img {
     border-radius: 20px;
-
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
 .world img:hover {
@@ -315,8 +333,6 @@ figure:hover figcaption {
 /*Kontaktformular*/
 /*Kontaktformular-Layout-Main*/
 .contact-page {
-    background: rgba(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,7 +369,7 @@ textarea {
 
 input[type=submit] {
     font-family: "Iansui", cursive;
-    background-color: #eeaeca;
+    background-color: #d8b49e;
     color: black;
     font-size: 1em;
     padding: 12px 20px;
@@ -365,7 +381,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #94bbe9;
+    background-color: #f5f2eb;
     border-radius: 1000px;
 }
 
@@ -374,14 +390,130 @@ input[type=submit]:hover {
     font-size: x-large;
 }
 
-/*Responsives Design*/
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2em;
+/*Responsives Design für mobile*/
+@media (max-width: 768px) {
+
+    h2 {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 1.5em;
+
     }
 
-    p {
-        font-size: 1em;
+    .about_me,
+    .Aufgabenstellung,
+    .socialmedia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        width: 90%;
+        height: auto;
+        gap: 5px;
+    }
+
+    .socialmedia a {
+        display: grid;
+        margin: auto;
+    }
+
+    .book_current,
+    .book_latest,
+    .book-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .book_img {
+        border-radius: 5px;
+        transform: none;
+    }
+
+    .book_headline {
+        margin-top: 30px;
+    }
+
+    .book_current_img {
+        width: 200px;
+        height: auto;
+    }
+    .book_latest_img {
+        width: 200px;
+        height: auto;
+    }
+
+    .recommends,
+    .book-item_recommends {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+  
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        gap: 50px;
+
+    }
+
+    .gallery img {
+        border: 1px solid #66666662;
+        width: 200px;
+        object-fit: cover;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .gallery img:hover {
+        transform: none !important;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .last_cruises,
+    .current {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .world {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .contact_form {
+        margin: 20px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 430px) {
+    h1 {
+        display: none;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
     }
 
 }
