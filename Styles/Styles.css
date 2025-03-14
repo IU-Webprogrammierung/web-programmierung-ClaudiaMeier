@@ -1,8 +1,9 @@
 /*---Styles ist gegliedert in Allgemein, Button, Header
-und Footer und dann pro Seite - ganz zum Schluss ist Responsive---*/
+und Footer und dann pro Seite (About me, Books, Gallery, Cruises, Contact
+ - ganz zum Schluss ist Responsive---*/
 
 /*ALLGEMEIN*/
-/*Body*/
+/*Body und Headings */
 body {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.2em;
@@ -10,6 +11,7 @@ body {
     margin: 0;
 }
 
+/*HEADING Positionierung im Header Image*/
 h1 {
     font-family: "Shadows Into Light", cursive;
     letter-spacing: 20px;
@@ -32,7 +34,7 @@ h3 {
 
 }
 
-/*Nach Oben Button*/
+/*Nach Oben Button als Sticky unten rechts*/
 .btn-top {
     position: fixed;
     right: 10px;
@@ -52,7 +54,7 @@ h3 {
     background-color: #376e2a;
 }
 
-/*HEADER*/
+/*HEADER mit farbigem Kontakt Button*/
 .nav {
     position: absolute;
     right: 32px;
@@ -118,12 +120,13 @@ footer a:hover {
 }
 
 /*ABOUT ME SEITE*/
+/*About me mit Avatarr als Container mit Avatar links und Text mit etwas Abstand*/
 .about_me {
     display: flex;
     align-items: center;
     height: 300px;
     padding: 20px 100px;
-    gap: 200px;
+    gap: 100px;
 
 }
 
@@ -175,6 +178,7 @@ img.Avatar {
     gap: 50px;
 }
 
+/*für etwas Abstand mehr Abstand als sonstiges Heading H2*/ 
 .book_headline {
     margin-top: 50px;
 }
@@ -211,9 +215,7 @@ img.Avatar {
     transform: scale(0.5);
 }
 
-
-
-/*Galerie*/
+/*Galerie mit jeweils 3 Bildern pro Kategorie, bei kleineren Screens 2 und dann 1*/
 
 .gallery {
     display: flex;
@@ -330,10 +332,12 @@ figure:hover figcaption {
     margin-top: 50px;
 }
 
-/*Kontaktformular*/
-/*Kontaktformular-Layout-Main*/
+/*Kontaktformular + Kontaktformular-Layout-Main*/
+
 .contact-page {
+    /*background: #6e9178; - Testweise rausgenommen */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -343,8 +347,8 @@ figure:hover figcaption {
 
 .contact_form {
     background-color: white;
-    padding: 80px;
-    border: 3px solid #cfcfcf;
+    padding: 20px;
+    border: 3px solid #274d1e93;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -369,7 +373,7 @@ textarea {
 
 input[type=submit] {
     font-family: "Iansui", cursive;
-    background-color: #d8b49e;
+    background-color: #274d1e;
     color: black;
     font-size: 1em;
     padding: 12px 20px;
@@ -381,7 +385,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #f5f2eb;
+    background-color: #376e2a;
     border-radius: 1000px;
 }
 
@@ -400,6 +404,7 @@ input[type=submit]:hover {
 
     }
 
+    /*ABOUT ME SEITE*/
     .about_me,
     .Aufgabenstellung,
     .socialmedia {
@@ -419,6 +424,7 @@ input[type=submit]:hover {
         margin: auto;
     }
 
+    /*BOOKS PAGE*/
     .book_current,
     .book_latest,
     .book-item {
@@ -444,6 +450,7 @@ input[type=submit]:hover {
         width: 200px;
         height: auto;
     }
+
     .book_latest_img {
         width: 200px;
         height: auto;
@@ -454,9 +461,10 @@ input[type=submit]:hover {
         display: flex;
         flex-direction: column;
         width: 90%;
-  
+
     }
 
+    /*GALLERY*/
     .gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -480,6 +488,8 @@ input[type=submit]:hover {
         box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     }
 
+    /*CRUISES*/
+
     .last_cruises,
     .current {
         display: flex;
@@ -497,11 +507,14 @@ input[type=submit]:hover {
         margin-bottom: 0px;
     }
 
+    /*CONTACT FORM*/
     .contact_form {
         margin: 20px;
         width: 80%;
     }
 }
+
+/*RESPONSIVE FÜR KLEINERE SCREENS*/
 
 @media (max-width: 430px) {
     h1 {
