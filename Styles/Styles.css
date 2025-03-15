@@ -1,6 +1,6 @@
 /*---Styles ist gegliedert in Allgemein, Button, Header
 und Footer und dann pro Seite (About me, Books, Gallery, Cruises, Contact
- - ganz zum Schluss ist Responsive---*/
+ - ganz zum Schluss ist Responsive, 1. Breakpoint ist bei 768px / 2. Breakpoint bei 430px---*/
 
 /*ALLGEMEIN*/
 /*Body und Headings */
@@ -55,8 +55,11 @@ h3 {
 }
 
 /*HEADER mit farbigem Kontakt Button*/
+header {
+    position: relative;
+}
 .nav {
-    position: absolute;
+position: absolute;
     right: 32px;
     left: 32px;
     top: 5px;
@@ -97,6 +100,7 @@ h3 {
 .nav-btn:hover {
     background-color: #376e2a;
 }
+
 
 /*FOOTER*/
 
@@ -178,7 +182,7 @@ img.Avatar {
     gap: 50px;
 }
 
-/*für etwas Abstand mehr Abstand als sonstiges Heading H2*/ 
+/*für etwas Abstand mehr Abstand als sonstiges Heading H2*/
 .book_headline {
     margin-top: 50px;
 }
@@ -289,10 +293,10 @@ figure img:hover {
 }
 
 figcaption {
-    position: absolute;
+position: absolute;
     bottom: 0;
     left: 0;
-    width: 60%;
+    width: fit-content;
     background: #49494981;
     color: black;
     text-align: center;
@@ -321,11 +325,6 @@ figure:hover figcaption {
 
 .world img:hover {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-.world_caption {
-    margin-left: 200px;
-    margin-bottom: 200px;
 }
 
 .world_map_heading {
@@ -462,6 +461,11 @@ input[type=submit]:hover {
         flex-direction: column;
         width: 90%;
 
+    }
+
+    .world_caption {
+        margin-left: 90px;
+        margin-bottom: 90px;
     }
 
     /*GALLERY*/

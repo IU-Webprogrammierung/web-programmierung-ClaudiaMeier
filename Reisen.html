@@ -16,12 +16,13 @@
 
 <body>
     <header>
+        <!--HEADER BEREICH: Enthält Hintergrundbild, Logo und Navigation-->
         <img class="header_image" src="img/background_img.jpeg" alt="Logo">
         <div class="nav">
-            <a href="index.html">
-                <img src="img/Logo.png" width="120px" height="120px">
+            <a href="index.html"> <!--Logo mit Link zur Startseite-->
+                <img src="img/Logo.png" alt="Logo" width="120px" height="120px">
             </a>
-            <div>
+            <div> <!--Navigation zu den einzelnen Seiten-->
                 <a href="index.html">Über mich</a>
                 <a href="Bücher.html">Bücher</a>
                 <a href="Fotografien.html">Fotografien</a>
@@ -29,20 +30,23 @@
                 <a class="nav-btn" href="Kontakt.html">Kontakt</a>
             </div>
         </div>
-        <h1>Portfolio</h1>
+        <a href="index.html">
+            <h1>Portfolio</h1>
+        </a> <!--Überschrift auf Header Image platziert-->
     </header>
     <main>
-        <!--Wo bin ich aktuell?-->
+        <!--Wo bin ich aktuell? mit verlinktem Bild-->
         <div class="current">
             <figure>
                 <a href="img/INS2503_EN.jpg">
                     <img src="img/INS2503_EN.jpg" alt="INS2503" width="400px"> </a>
                 <figcaption>02.03.2025 - 19.03.2025 </figcaption>
             </figure>
-            <p>Aktuell befinde ich mich irgendwo, zwischen Neuseeland - Australien und Neukaledonien oder auch schon Papua-Neuguinea &#128522;</p>
+            <p>Aktuell befinde ich mich irgendwo, zwischen Neuseeland - Australien und Neukaledonien oder auch schon
+                Papua-Neuguinea &#128522;</p>
         </div>
 
-        <!--Was waren meine letzten Reisen-->
+        <!--Die letzten Reisen, jeweils mit verlinktem Bild und Figcaption mit Hover Effekt-->
         <h2>Die letzten Reisen</h2>
         <div class="last_cruises">
             <figure>
@@ -84,24 +88,20 @@
 
         </div>
 
-        <h2 class="world_map_heading">World Map</h2> <!--Verlinkte World Map mit Orten die schon bereist wurden-->
+        <h2 class="world_map_heading">World Map</h2>
+        <!--Verlinkte World Map mit Orten die schon bereist wurden / ohne Figcaption-->
         <div class="world">
-            <figure>
-                <a
-                    href="https://map1.maploco.com/visited-countries/mine.php?c1=m8335a9n2a-gs9ojplm3c-co71p4a1w0-b3lf2s6wyw-2rvel86ips">
-                    <img
-                        src="https://map1.maploco.com/visited-countries/ml/m8335a9n2a-gs9ojplm3c-co71p4a1w0-b3lf2s6wyw-2rvel86ips.gif">
-                </a>
-                <figcaption class="world_caption">Klicke um die Orte zu sehen</figcaption>
-            </figure>
+            <a
+                href="https://map1.maploco.com/visited-countries/mine.php?c1=m8335a9n2a-gs9ojplm3c-co71p4a1w0-b3lf2s6wyw-2rvel86ips">
+                <img src="https://map1.maploco.com/visited-countries/ml/m8335a9n2a-gs9ojplm3c-co71p4a1w0-b3lf2s6wyw-2rvel86ips.gif"
+                    alt="Weltkarte mit besuchten Orten">
+            </a>
         </div>
-
-
         <a href="#top" class="btn-top"> <!--Button um wieder nach oben zu kommen-->
             <img src="img/Pfeil.png" alt="Pfeil nach oben">
         </a>
     </main>
-    <footer>
+    <footer> <!--FOOTER mit rechtlichen Links-->
         <a href="#">&copy copyright by Claudia</a>
         <a href="#">Datenschutz</a>
         <a href="#">Impressum</a>

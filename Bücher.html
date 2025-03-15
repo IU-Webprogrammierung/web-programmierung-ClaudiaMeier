@@ -16,12 +16,13 @@
 
 <body>
     <header>
+        <!--HEADER BEREICH: Enthält Hintergrundbild, Logo und Navigation-->
         <img class="header_image" src="img/background_img.jpeg" alt="Logo">
         <div class="nav">
-            <a href="index.html">
-                <img src="img/Logo.png" width="120px" height="120px">
+            <a href="index.html"> <!--Logo mit Link zur Startseite-->
+                <img src="img/Logo.png" alt="Logo" width="120px" height="120px">
             </a>
-            <div>
+            <div> <!--Navigation zu den einzelnen Seiten-->
                 <a href="index.html">Über mich</a>
                 <a href="Bücher.html">Bücher</a>
                 <a href="Fotografien.html">Fotografien</a>
@@ -29,11 +30,13 @@
                 <a class="nav-btn" href="Kontakt.html">Kontakt</a>
             </div>
         </div>
-        <h1>Portfolio</h1>
+        <a href="index.html">
+            <h1>Portfolio</h1>
+        </a> <!--Überschrift auf Header Image platziert-->
     </header>
     <main>
 
-        <!--Buch, welches ich aktuell lese-->
+        <!--Buch, welches ich aktuell lese / Bild links und Text mit etwas Abstand daneben-->
         <h2 class="book_headline">Das lese ich aktuell</h2>
         <div class="book_current">
             <img class="book_current_img" src="img/BodoSchäfer.jpg" alt="BodoSchäfer" width="200px" height="200px">
@@ -51,7 +54,7 @@
             </div>
         </div>
 
-        <h2 class="book_headline">Das habe ich zuletzt gelesen</h2> <!--Zuletzt gelesenes Buch-->
+        <h2 class="book_headline">Das habe ich zuletzt gelesen</h2> <!--Zuletzt gelesenes Buch / Bild mit Text und etwas Abstand dazwischen-->
         <div class="book_latest">
             <img class="book_latest_img" src="img/MichelleAdams.jpg" alt="MichelleAdams" width="200px" height="200px">
             <div>
@@ -104,7 +107,7 @@
         </a>
     </main>
 
-    <footer>
+    <footer> <!--FOOTER mit rechtlichen Links-->
         <a href="#">&copy copyright by Claudia</a>
         <a href="#">Datenschutz</a>
         <a href="#">Impressum</a>
