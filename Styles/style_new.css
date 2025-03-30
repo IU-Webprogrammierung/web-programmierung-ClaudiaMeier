@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: lightgray;
+}
+
+
+h2 {
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    background-color: #869CB5;
+}
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+nav a:hover {
+    background-color: #4D6C8A;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+/*NAVIGATION  FOR MOBILE */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 999;
+    background-color: #446abd65; /*TRANSPARENZ*/
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+
+.menu_btn {
+    display: none;
+}
+
+
+
+#hero_image {
+    max-height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+
+.about_me_content {
+    padding: 50px;
+}
+
+
+
+
+
+
+
+.gallery_preview {
+    background-color: #4D6C8A;
+    box-shadow: 0px 0px 10px #5b527198;
+}
+
+.gallery_preview h2 {
+    color: white;
+}
+
+.gallery_preview h2,
+.books_preview h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    padding: 30px;
+    text-align: center;
+}
+
+.gallery_preview img,
+.books_pictures img {
+    transform: scale(0.9);
+    object-fit: cover;
+    max-width: 350px;
+    border-radius: 5PX;
+    box-shadow: 0px 0px 50px #729eb669;
+}
+
+.gallery_pictures,
+.books_pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.content_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button_link {
+    font-size: 1.2rem;
+    background-color: #05152C;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.button_link a {
+    color: white;
+    text-decoration: none;
+}
+
+.button_link:hover {
+    background-color: #05152c7e;
+}
+
+
+
+
+
+
+
+
+
+.contact_content {
+    background-color: #4D6C8A;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    width: 50%;
+    padding: 20px;
+}
+
+.content a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+#contact_form {
+    padding: 20px;
+    border: 1px solid #05152C;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #05152C;
+    border-radius: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #05152c7e;
+
+}
+
+.social_media {
+    display: block;
+    text-align: center;
+}
+
+.social_media a {
+    padding-top: 20px;
+    font-size: 40px;
+    color: #F7D2CF;
+}
+
+
+footer {
+    background-color: #4D6C8A;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width: 830px) {
+    .hideOneMobile {
+        display: none;
+    }
+
+    .menu_btn {
+        display: block;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .contact_content {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .gallery_pictures,
+    .books_pictures {
+        padding: 10px;
+    }
+
+    .mobile_hide_first {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .gallery_preview h2,
+    .books_preview h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+
+    .mobile_hide {
+        display: none;
+    }
+
+    .gallery_preview img,
+    .books_pictures img {
+        max-width: 90%;
+    }
+
+
+}
+
+@media (max-width: 300px) {
+    .nav_link {
+        display: none;
+    }
+
+    .gallery_preview img,
+    .books_pictures img {
+        display: none;
+
+    }
+
+
+
+
+}

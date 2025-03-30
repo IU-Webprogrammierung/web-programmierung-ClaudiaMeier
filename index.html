@@ -1,87 +1,134 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/Styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style_new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio - Claudia Meier</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <!--HEADER BEREICH: Enthält Hintergrundbild, Logo und Navigation-->
-        <img class="header_image" src="img/background_img.jpeg" alt="Logo">
-        <div class="nav">
-            <a href="index.html"> <!--Logo mit Link zur Startseite-->
-                <img src="img/Logo.png" alt="Logo" width="120px" height="120px">
-            </a>
-            <div> <!--Navigation zu den einzelnen Seiten-->
-                <a href="index.html">Über mich</a>
-                <a href="Bücher.html">Bücher</a>
-                <a href="Fotografien.html">Fotografien</a>
-                <a href="Reisen.html">Reisen</a>
-                <a class="nav-btn" href="Kontakt.html">Kontakt</a>
-            </div>
-        </div>
-        <a href="index.html">
-            <h1>Portfolio</h1>
-        </a> <!--Überschrift auf Header Image platziert-->
+        <nav>
+            <ul class="sidebar"> <!--MOBILE NAVIGATION-->
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="cruises.html">Cruises</a></li>
+                <li><a href="#contact_form">Contact</a></li>
+            </ul>
+            <ul>
+                <li class="nav_link"><a href="index.html">Portfolio</a></li> <!--DESKTOP NAVIGATION-->
+                <li class="hideOneMobile"><a href="index.html">About Me</a></li>
+                <li class="hideOneMobile"><a href="books.html">Books</a></li>
+                <li class="hideOneMobile"><a href="gallery.html">Gallery</a></li>
+                <li class="hideOneMobile"><a href="cruises.html">Cruises</a></li>
+                <li class="hideOneMobile"><a href="#contact_form">Contact</a></li>
+                <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <script> // EIN UND AUSKLAPPEN DER NAVIGATION
+            function showSidebar(){
+               const sidebar = document.querySelector(".sidebar")
+               sidebar.style.display = "flex"
+            }
+            function hideSidebar() {
+               const sidebar = document.querySelector(".sidebar")
+               sidebar.style.display = "none"
+            }
+        </script>
     </header>
+
     <main>
-        <h2>Über mich</h2> <!-- Über mich Info mit Avatar Bild  -->
-        <div class="about_me">
-            <img class="Avatar" src="img/avatar_3.jpg" alt="Avatar" width="200px" height="200px">
-            <!--Avatar Image links neben Text mit Abstand dazwischen-->
-            <div class="about_me_text">
-                <p>Hi, ich bin Claudia! Ich habe eine große Leidenschaft fürs Fotografieren - sowohl mit der Kamera als
-                    auch mit
-                    meiner
-                    Drohne.
-                    Es fasziniert mich, die Welt aus unterschiedlichen Perspektiven festzuhalten und einzigartige
-                    Momente
-                    einzufangen. Hier findest Du Inhalte zu Büchern, die ich aktuell lese, gelesen habe und meine
-                    Empfehlungen,
-                    meine Liebe zur Fotografie sowie Reiseberichte über Routen, die ich mit einem
-                    Expeditionskreuzfahrtschiff gemacht habe.
-                </p>
+       <img id="hero_image" src="img/background_img_2.jpeg" alt=""> <!--HERO SLIDER-->
+
+        <div class="about_me_content">
+            <h1>Hi! I'm Claudia!</h1>  <!--CONTENT HINZUFÜGEN-->
+            <p>This website is part of and modul from
+                Here you will find some pictures, which I took while I am traveling around the world while working on a
+                ship.</p>
+            <p>
+                My passion is to take picutres and capturing moments. Therefore I am using my Sony Alpha 7IV with a
+                24-105mm lense and my DJI Mini 4 Pro.
+                I am currently working on an expedition cruise ship. Ich habe eine große Leidenschaft fürs Fotografieren
+                - sowohl mit der Kamera als
+                auch mit meiner Drohne.
+                Es fasziniert mich, die Welt aus unterschiedlichen Perspektiven festzuhalten und einzigartige
+                Momente
+                einzufangen. Hier findest Du Inhalte zu Büchern, die ich aktuell lese, gelesen habe und meine
+                Empfehlungen,
+                meine Liebe zur Fotografie sowie Reiseberichte über Routen, die ich mit einem
+                Expeditionskreuzfahrtschiff gemacht habe.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui praesentium provident, laudantium tempora ipsa maxime eligendi quo optio excepturi illum iusto quos voluptatem facilis. Laudantium tempore saepe ipsam at nostrum.</p>
+        </div>
+        <section class="gallery_preview">
+            <div class="content_text">
+                <h2>Just here to see some pictures?</h2>
+                <button class="button_link"><a href="gallery.html">Gallery</a></button> <!--BUTTON ZU GALLERY-->
+            </div>
+            <div class="gallery_pictures">
+                <img class="mobile_hide_first" src="img/Amazonas_2.jpeg" alt=""> <!--ALT TAGS NOCH HINZUFÜGEN-->
+                <img class="mobile_hide" src="img/Antarctic_1.jpeg" alt="">
+                <img src="img/Arktis_2.jpeg" alt="">
+            </div>
+        </section>
+
+        <section class="books_preview">
+            <div class="content_text">
+                <h2>Want to get some book recommendations?</h2>
+                <button class="button_link"><a href="books.html">Books</a></button> <!--BUTTON ZU BOOKS-->
+            </div>
+            <div class="books_pictures">
+                <img class="mobile_hide_first" src="img/Amazonas_2.jpeg" alt=""> <!--ALT TAGS NOCH HINZUFÜGEN UND BILDER ÄNDERN-->
+                <img class="mobile_hide" src="img/Antarctic_1.jpeg" alt="">
+                <img src="img/Arktis_2.jpeg" alt="">
+            </div>
+        </section>
+
+        <div class="contact_content">
+            <div class="content">
+                <i><h2>Lets get in contact &#128151</h2></i> <!--CONTENT HINZUFÜGEN-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus at, quidem obcaecati
+                    assumenda quam,
+                    officiis accusamus minus ut culpa dignissimos atque ipsum distinctio libero! Iure
+                    eveniet eos saepe
+                    illum dignissimos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus at, quidem obcaecati
+                    assumenda quam,
+                    officiis accusamus minus ut culpa dignissimos atque ipsum distinctio libero! Iure
+                    eveniet eos saepe
+                    illum dignissimos.</p>
+                    <div class="social_media">
+                    <i><h2>Follow Me</h2></i>
+                <a href="#" class="fa">&#xf16d;</a>
+                <a href="#" class="fa">&#xf0e1;</a>
+                    </div>
+            </div>
+
+            <div id="contact_form">
+                <form action method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <label for="email">E-Mail</label>
+                    <input type="text" id="email" name="email" placeholder="EMail" required>
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" rows="8" cols="40" placeholder="Your message..."
+                        required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
             </div>
         </div>
-        <h2>Aufgabe</h2>
-        <div class="Aufgabenstellung"> <!--Kurze  Zusammenfassung der Aufgabe / Arbeit -->
-            <div>
-                <p>Die Aufgabe hinter dieser Website ist es, eine einfache, statische Website zu erstellen, die
-                    interessante
-                    Informationen über mich und meine Interessen teilt. Das Ziel war es, eine benutzerfreundliche und
-                    responsive Seite zu gestalten, die sowohl auf Mobilgeräten als auch auf PCs gut aussieht. Seite
-                    wurde
-                    mit HTML und CSS umgesetzt und nutzt Techniken wie Flexbox, Grid und Media Queries, um
-                    sicherzustellen, dass das
-                    Design auf verschiedenen Bildschirmgrößen optimal dargestellt wird.
-                </p>
-            </div>
-        </div>
-        <h2>Follow Me</h2>
-        <div class="socialmedia"> <!--Social Media Links-->
-            <div>
-                <a href="#">LinkedIn Profil</a> | <a href="#">Instagram Profil</a> | <a href="#">Facebook</a>
-            </div>
-        </div>
-        <a href="#top" class="btn-top"> <!--Button um wieder nach oben zu kommen-->
-            <img src="img/Pfeil.png" alt="Pfeil nach oben">
-        </a>
     </main>
-    <footer> <!--FOOTER mit rechtlichen Links-->
-        <a href="#">&copy copyright by Claudia</a>
-        <a href="#">Datenschutz</a>
-        <a href="#">Impressum</a>
-        <a href="Kontakt.html">Kontakt</a>
+
+    <footer> <!--FOOTERs-->
+
+        <p>&copy copyright by Claudia</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Legal Notice</a>
     </footer>
 </body>
 
