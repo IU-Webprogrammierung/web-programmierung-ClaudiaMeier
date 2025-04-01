@@ -30,7 +30,7 @@
                 <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#05152C"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
-        <script> // EIN UND AUSKLAPPEN DER NAVIGATION
+        <script> 
             function showSidebar(){
                const sidebar = document.querySelector(".sidebar")
                sidebar.style.display = "flex"
@@ -43,7 +43,7 @@
     </header>
 
     <main>
-       <img id="hero_image" src="img/background_img_2.jpeg" alt=""> <!--HERO SLIDER-->
+      
 
         <div class="about_me_content">
             <h1>Hi! I'm Claudia!</h1>  <!--CONTENT HINZUFÜGEN-->
@@ -65,10 +65,11 @@
             </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui praesentium provident, laudantium tempora ipsa maxime eligendi quo optio excepturi illum iusto quos voluptatem facilis. Laudantium tempore saepe ipsam at nostrum.</p>
         </div>
+        
         <section class="gallery_preview">
             <div class="content_text">
                 <h2>Just here to see some pictures?</h2>
-                <button class="button_link"><a href="gallery.html">Gallery</a></button> <!--BUTTON ZU GALLERY-->
+                <a href="gallery.html">Gallery</a> 
             </div>
             <div class="gallery_pictures">
                 <img class="mobile_hide_first" src="img/gallery_img/Antarctic.jpg" alt=""> <!--ALT TAGS NOCH HINZUFÜGEN-->
@@ -80,7 +81,7 @@
         <section class="books_preview">
             <div class="content_text">
                 <h2>Want to get some book recommendations?</h2>
-                <button class="button_link"><a href="books.html">Books</a></button> <!--BUTTON ZU BOOKS-->
+                <a href="books.html">Books</a>
             </div>
             <div class="books_pictures">
                 <img class="mobile_hide_first" src="img/Amazonas_2.jpeg" alt=""> <!--ALT TAGS NOCH HINZUFÜGEN UND BILDER ÄNDERN-->
@@ -91,7 +92,7 @@
 
         <div class="contact_content">
             <div class="content">
-                <i><h2>Lets get in contact &#128151</h2></i> <!--CONTENT HINZUFÜGEN-->
+                <h2>Lets get in contact &#128151;</h2> <!--CONTENT HINZUFÜGEN-->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus at, quidem obcaecati
                     assumenda quam,
                     officiis accusamus minus ut culpa dignissimos atque ipsum distinctio libero! Iure
@@ -103,14 +104,14 @@
                     eveniet eos saepe
                     illum dignissimos.</p>
                     <div class="social_media">
-                    <i><h2>Follow Me</h2></i>
+                    <h2>Follow Me</h2>
                 <a href="#" class="fa">&#xf16d;</a>
                 <a href="#" class="fa">&#xf0e1;</a>
                     </div>
             </div>
 
             <div id="contact_form">
-                <form action method="post">
+                <form action="#" method="post">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name" required>
                     <label for="email">E-Mail</label>
@@ -124,9 +125,8 @@
         </div>
     </main>
 
-    <footer> <!--FOOTERs-->
-
-        <p>&copy copyright by Claudia</p>
+    <footer> <!--FOOTER-->
+        <p>&copy; copyright by Claudia</p>
         <a href="#">Privacy Policy</a>
         <a href="#">Legal Notice</a>
     </footer>

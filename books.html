@@ -13,7 +13,11 @@
     <header>
         <nav>
             <ul class="sidebar"> <!--MOBILE NAVIGATION-->
-                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -27,99 +31,141 @@
                 <li class="hideOneMobile"><a href="gallery.html">Gallery</a></li>
                 <li class="hideOneMobile"><a href="cruises.html">Cruises</a></li>
                 <li class="hideOneMobile"><a href="index.html#contact_form">Contact</a></li>
-                <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
         </nav>
         <script> // EIN UND AUSKLAPPEN DER NAVIGATION
-            function showSidebar(){
-               const sidebar = document.querySelector(".sidebar")
-               sidebar.style.display = "flex"
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar")
+                sidebar.style.display = "flex"
             }
             function hideSidebar() {
-               const sidebar = document.querySelector(".sidebar")
-               sidebar.style.display = "none"
+                const sidebar = document.querySelector(".sidebar")
+                sidebar.style.display = "none"
             }
         </script>
     </header>
 
     <main>
-
-        <!--Buch, welches ich aktuell lese / Bild links und Text mit etwas Abstand daneben-->
-        <h2 class="book_headline">Das lese ich aktuell</h2>
+        <img src="img/hero_book.jpg" id="hero" alt="open book with a tea cup in the middle">
+        
+        <div class="current">
+        <h2 class="book_headline">I am currently reading</h2>
         <div class="book_current">
-            <img class="book_current_img" src="img/BodoSchäfer.jpg" alt="BodoSchäfer" width="200px" height="200px">
+            <div class="book_content">
+                <h3 class="single_heading">Bodo Schäfer - The Laws of the Winners</h3>
+                <p>The Laws of the Winners by Bodo Schafer has helped innumerable people, and you can be one of
+                    them!What is it that you want most out of life? Is it wealth, power, or even happiness perhaps?
+                    One's future is up in the air for many people, and they just let the current of life sweep them any
+                    which way. Wouldn't it be great if there were a set of rules to follow, laws per se, that could help
+                    you join the ranks of the productive and successful? As it turns out, there are.Bodo Schafer is a
+                    successful time-management trainer. Through his time spent as a financial guru, Schafer has come up
+                    with a set of thirty laws that, when followed, can drastically improve the quality of your life.
+                    These laws give you the tools you need to gain control of your life and attain the confidence you
+                    need to move forward with all the purpose and gusto of a true winner.In this book, you will learn
+                    how to be happy, smart, and successful; the tools needed to achieve your dreams; the secret to
+                    having immeasurable confidence; and so much more!There's no easy fix when it comes to achieving
+                    success. There is, however, a series of steps you can follow to ensure that your life improves in a
+                    dramatic and measurable way. These laws have assisted many over a lengthy period of time, and this
+                    infallible method can help you too!</p>
+            </div>
             <div>
-                <h3>Bodo Schäfer - Die Gesetze der Gewinner</h3>
-                <p>Erfolg und ein erfülltes Leben. Diese Ziele haben wir alle. Doch oft geben wir uns mit zu wenig
-                    zufrieden. Unsere Visionen, unsere Träume werden von Verpflichtungen, Frustrationen oder dem
-                    Alltagsgeschäft überlagert. Genau hier setzt das Coaching von Bodo Schäfer ein. Er hat 30 leicht
-                    nachvollziehbare Strategien entwickelt und erprobt, die beruflichen und persönlichen Erfolg
-                    befördern.
-                    Jedes Gesetz wird ausführlich erklärt und enthält einen Praxisteil mit Aufgaben und Übungen, die der
-                    Leser gleich ausprobieren und umsetzen kann. So kann man Tag für Tag feststellen, wie sich die
-                    eigenen
-                    Verhaltensweisen und die Sicht auf die Welt ändern innerhalb nur eines Monats.</p>
+                <img src="img/BodoSchäfer.jpg" alt="Bodo Schaefer The Laws of the Winners Book Cover">
             </div>
         </div>
+        </div>
 
-        <h2 class="book_headline">Das habe ich zuletzt gelesen</h2> <!--Zuletzt gelesenes Buch / Bild mit Text und etwas Abstand dazwischen-->
+
+
+        <div class="latest">
+        <h2 class="book_headline">My last book</h2>
         <div class="book_latest">
-            <img class="book_latest_img" src="img/MichelleAdams.jpg" alt="MichelleAdams" width="200px" height="200px">
-            <div>
-                <p><b>Michelle Adams - Die Sammlerin der Erinnerungen</b></p>
-                <p>Ein kleines Dorf in Südfrankreich in den 80er-Jahren: Für die junge Frances ist Benoit die erste
-                    große Liebe und der gemeinsam verlebte Sommer erscheint ihr unendlich. Doch dann vertraut ihr
-                    Benoit
-                    ein Geheimnis an, das sie für immer trennen wird. 2022, Cotswolds, England: Harry Langley löst
-                    den
-                    Haushalt seiner verstorbenen Mutter Frances auf, die ihm ein Vermächtnis hinterlassen hat.
-                    Gemeinsam
-                    mit seiner Exfreundin Tabitha, einer Kunsthistorikerin, soll er nach einer wertvollen Schatulle
-                    suchen...</p>
+            <img src="img/MichelleAdams.jpg" alt="Michelle Adams Hidden Treasures Book Cover">
+            <div class="book_content">
+                <h3 class="single_heading">Michelle Adams - Hidden Treasures</h3>
+                <p>Once upon a time, in a small village in southern France, a pretty, willful English girl is falling in
+                    love. Frances Langley has fallen under Benoit's romantic spell, so sure is she that he is everything
+                    she's ever wanted—a self-assured, sexy man, experienced and just a little bit mysterious. But
+                    Frances is hiding a secret—one that would surely separate them if he ever knew the truth. And to
+                    hold on to his love, she is willing to do anything for him, even put herself at risk by hiding a
+                    precious object, stolen by the Nazis decades before.
+                    Years later, Frances's son, Harry, opens the door of his late mother's home, never expecting to see
+                    Tabitha—the lost love of his life—on the other side. Their angry parting had broken his heart, but
+                    now she holds a letter, sent by his mother just before her death, begging the pair to
+                    search—together—for a priceless jewelry box, hidden somewhere in her little Cotswold cottage.
+                    Harry quickly dismisses the search, but as an art historian, Tabitha cannot risk the chance to
+                    recover something so valuable that was long thought to be lost. And so they embark on a journey of
+                    discovery, but soon find themselves searching for much more than a missing piece of art. Together
+                    they learn that the true riches are not those buried in the clutter of Francis' cottage, but are
+                    instead the treasures they each hold, buried deep inside their hearts.
+                </p>
             </div>
         </div>
+        </div>
 
-        <h2 class="book_headline">Das sind meine Empfehlungen</h2><!--Empfehlungen in einer 3er Aufteilung-->
         <div class="recommends">
-            <div class="book-item_recommends">
-                <img class="book_img" src="img/PauloCoelho.jpg" alt="PauloCoelho">
-                <h3>Paulo Coelho - Der Alchimist</h3>
-                <p>Der Alchimist von Paulo Coelho erzählt die Reise des Hirten Santiago, der einem Traum folgt und
-                    nach
-                    einem Schatz in Ägypten sucht. Auf seinem Weg lernt er, dass der wahre Schatz nicht materiell
-                    ist,
-                    sondern in der Verwirklichung seiner Träume und der Entdeckung seiner „persönlichen Legende“
-                    liegt.
-                </p>
-            </div>
+            <h2 class="book_headline">My Recommendations</h2>
+            <div class="recommends_split">
+                <div class="recommends_content">
+                    <img src="img/PauloCoelho.jpg" alt="Paulo Coelho The Alchemist Book Cover">
+                    <h3>Paulo Coelho - The Alchemist</h3>
+                    <p>Combining magic, mysticism, wisdom, and wonder into an inspiring tale of self-discovery, The
+                        Alchemist has become a modern classic, selling millions of copies worldwide and transforming the
+                        lives of countless readers. Paulo Coelho's masterpiece tells the mystical story of Santiago, an
+                        Andalusian shepherd boy who longs to travel in search of a worldly treasure. His quest leads him
+                        to
+                        riches far different—and far more fulfilling — than he ever imagined. Santiago's journey teaches
+                        us
+                        the wisdom of listening to our hearts, recognizing opportunity, and learning to read the omens
+                        along
+                        life's path. Most importantly, it shows us the value of following our dreams.</p>
+                </div>
 
-            <div class="book-item_recommends">
-                <img class="book_img" src="img/ClaraBagus.jpg" alt="ClaraBagus">
-                <h3>Clara Maria Bagus - Die Farbe von Glück</h3>
-                <p>Eine falsche Entscheidung, die das Leben dreier Familien für immer verändert: Ein Richter zwingt
-                    die
-                    Krankenschwester Charlotte, sein sterbenskrankes Neugeborenes gegen ein gesundes zu tauschen...
-                </p>
-            </div>
+                <div class="recommends_content">
+                    <img src="img/BriannaWiest_themountainisyou.jpg" alt="Brianna Wiest The Mountain is you Book Cover">
+                    <h3>Brianna Wiest - The Mountain Is You</h3>
+                    <p> This book explores the concept of self-sabotage—why we do it, when we do it, and how to break
+                        free
+                        from it for good. Conflicting needs create self-sabotaging behaviors, often making change seem
+                        futile. But by gaining insight into our damaging habits, understanding our brains and bodies,
+                        releasing past traumas, and learning to act as our highest selves, we can move beyond our own
+                        obstacles. For centuries, the mountain has symbolized the big challenges we face, especially
+                        those
+                        that seem insurmountable. To climb these mountains, we must do the deep internal work of
+                        healing,
+                        building resilience, and adjusting how we approach life. In the end, we do not master the
+                        mountain,
+                        but ourselves.</p>
+                </div>
 
-            <div class="book-item_recommends">
-                <img class="book_img" src="img/BriannaWiest.jpg" alt="BriannaWiest">
-                <h3>Brianna Wiest - 101 Essays, die dein Leben verändern werden</h3>
-                <p>101 Essays, die dein Leben verändern werden“ von Brianna Wiest bietet eine Sammlung von Essays,
-                    die den Leser zur Selbstreflexion anregen...</p>
+                <div class="recommends_content">
+                    <img src="img/BriannaWiest_101essays.jpg"
+                        alt="Brianna Wiest 101 Essays that will change the way you think Book Cover">
+                    <h3>Brianna Wiest - 101 Essays that will change the way you think</h3>
+                    <p>101 Essays That Will Change The Way You Think, the global bestseller and social media sensation,
+                        is a
+                        carefully curated collection of Brianna Wiest's most popular and influential writings. Her
+                        essays
+                        offer profound reflections on why you should prioritize purpose over passion, embrace negative
+                        thinking, see the value in daily routines, and become aware of the cognitive biases that shape
+                        your
+                        perception of the world. Some of these essays have never been published before, while others
+                        have
+                        already been read by millions across the globe. No matter the piece, each will leave you
+                        reflecting
+                        deeply: this idea changed my life.</p>
+                </div>
             </div>
         </div>
-
-        <a href="#top" class="btn-top"> <!--Button um wieder nach oben zu kommen-->
-            <img src="img/Pfeil.png" alt="Pfeil nach oben">
-        </a>
     </main>
 
-    <footer> <!--FOOTER mit rechtlichen Links-->
-        <a href="#">&copy copyright by Claudia</a>
-        <a href="#">Datenschutz</a>
-        <a href="#">Impressum</a>
-        <a href="Kontakt.html">Kontakt</a>
+    <footer> <!--FOOTER-->
+        <p>&copy; copyright by Claudia</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Legal Notice</a>
     </footer>
 </body>
 

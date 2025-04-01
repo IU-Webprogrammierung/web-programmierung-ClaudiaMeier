@@ -2,11 +2,7 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(230, 230, 230);
-}
-
-/*gallery special background*/
-body.gallery_bckgrnd {
-    background-color: #05152C;
+    height: 100vh;
 }
 
 h2 {
@@ -14,9 +10,16 @@ h2 {
     margin: 0;
 }
 
+/*gallery special background*/
+body.gallery_bckgrnd {
+    background-color: #05152C;
+}
+
+
+/*NAVIGATION*/
 nav {
     margin: 0;
-    background-color: #869CB5;
+    background-color: #4D6C8A;
 }
 
 nav ul {
@@ -46,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #4D6C8A;
+    background-color: #869CB5;
 }
 
 nav li:first-child {
@@ -62,7 +65,8 @@ nav li:first-child {
     height: 100%;
     width: 250px;
     z-index: 999;
-    background-color: rgba(135, 157, 181, 0.384); /*rgba color otherwise there is no blur*/
+    background-color: rgba(135, 157, 181, 0.582);
+    /*rgba color otherwise there is no blur*/
     backdrop-filter: blur(10px);
     box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
     display: none;
@@ -75,31 +79,16 @@ nav li:first-child {
     width: 100%;
 }
 
-
 .menu_btn {
     display: none;
 }
 
 
 
-#hero_image {
-    max-height: 25rem;
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(0.4);
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-
-}
-
 
 .about_me_content {
     padding: 50px;
 }
-
-
-
-
-
 
 
 .gallery_preview {
@@ -109,9 +98,12 @@ nav li:first-child {
 
 .gallery_preview h2 {
     color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    padding: 30px;
+    text-align: center;
 }
 
-.gallery_preview h2,
 .books_preview h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
@@ -233,7 +225,6 @@ input[type=submit]:hover {
 
 footer {
     background-color: #4D6C8A;
-    max-height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -246,13 +237,87 @@ footer a {
 }
 
 
+/*BOOKS*/
+
+#hero {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.current {
+    background-color: #4D6C8A;
+}
+
+.book_current {
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+    align-items: center;
+    padding: 50px;
+}
+
+.book_latest {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.single_heading {
+    text-align: center;
+}
+
+.book_content {
+    padding: 50px;
+}
+
+#book_current_img {
+    border-radius: 5px;
+}
+
+.recommends {
+    background-color: #4D6C8A;
+}
+
+.recommends_split {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.recommends_content {
+    width: 33%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommends_content img {
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.book_headline {
+    text-align: center;
+    padding: 20px;
+}
+
+
 
 .gallery {
     padding: 20px;
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 250px;
     grid-auto-flow: dense;
@@ -272,9 +337,11 @@ footer a {
 }
 
 .gallery div img {
+    border-radius: 5px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.4);
 }
 
 
@@ -324,6 +391,22 @@ footer a {
         font-size: 1.5rem;
     }
 
+    .recommends_split {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recommends_content {
+        width: 90%;
+    }
+
+
+    .book_current, 
+    .book_latest  {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 560px) {
@@ -338,6 +421,12 @@ footer a {
     .big-stretch {
         grid-row: span 1;
         grid-column: span 1;
+    }
+
+    .book_current, 
+    .book_latest, 
+    .book_content {
+        padding: 10px;
     }
 }
 
@@ -355,6 +444,12 @@ footer a {
         max-width: 90%;
     }
 
+    .book_current img, 
+    .book_latest img, 
+    .recommends_content img {
+        display: none;
+    }
+
 
 }
 
@@ -364,7 +459,7 @@ footer a {
     }
 
     .gallery_preview img,
-    .books_pictures img {
+    .books_pictures img, {
         display: none;
 
     }
