@@ -459,9 +459,8 @@ footer a {
     }
 
     .gallery_preview img,
-    .books_pictures img, {
+    .books_pictures img {
         display: none;
-
     }
 
 
