@@ -13,7 +13,11 @@
     <header>
         <nav>
             <ul class="sidebar"> <!--MOBILE NAVIGATION-->
-                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -27,87 +31,119 @@
                 <li class="hideOneMobile"><a href="gallery.html">Gallery</a></li>
                 <li class="hideOneMobile"><a href="cruises.html">Cruises</a></li>
                 <li class="hideOneMobile"><a href="index.html#contact_form">Contact</a></li>
-                <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
         </nav>
         <script> // EIN UND AUSKLAPPEN DER NAVIGATION
-            function showSidebar(){
-               const sidebar = document.querySelector(".sidebar")
-               sidebar.style.display = "flex"
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar")
+                sidebar.style.display = "flex"
             }
             function hideSidebar() {
-               const sidebar = document.querySelector(".sidebar")
-               sidebar.style.display = "none"
+                const sidebar = document.querySelector(".sidebar")
+                sidebar.style.display = "none"
             }
         </script>
     </header>
 
     <main>
-        <!--Wo bin ich aktuell? mit verlinktem Bild-->
-        <div class="current">
-            <figure>
-                <a href="img/INS2503_EN.jpg">
-                    <img src="img/INS2503_EN.jpg" alt="INS2503" width="400px"> </a>
-                <figcaption>02.03.2025 - 19.03.2025 </figcaption>
-            </figure>
-            <p>Aktuell befinde ich mich irgendwo, zwischen Neuseeland - Australien und Neukaledonien oder auch schon
-                Papua-Neuguinea &#128522;</p>
+        <img src="img/hero_cruises.jpeg" class="hero" alt="fisher man on the water">
+
+        <div class="cruise">
+            <div class="current_cruise">
+                <img src="img/INS2503_EN.jpg" alt="INS2503">
+            </div>
+            <div class="current_cruise_content">
+                <h2>Current Cruise </h2>
+                <h3>02.03.2025 - 19.03.2025</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, ratione! Quod eligendi odit est,
+                    molestiae ratione necessitatibus repudiandae eius deserunt odio laudantium ea esse iure consectetur
+                    aliquid nihil dolores itaque!</p>
+            </div>
         </div>
 
-        <!--Die letzten Reisen, jeweils mit verlinktem Bild und Figcaption mit Hover Effekt-->
-        <h2>Die letzten Reisen</h2>
+
+
         <div class="last_cruises">
-            <figure>
-                <figcaption>28.01.2025 - 02.03.2025</figcaption>
-                <a href="img/INS2502_EN.jpg">
-                    <img class="cruis_img" src="img/INS2502_EN.jpg" alt="INS2502_EN" width="400px">
-                </a>
-            </figure>
-            <figure>
-                <figcaption>10.01.2025 - 28.01.2025</figcaption>
-                <a href="img/NAT2425_NAT2501_02_INS2501_EN.jpg">
-                    <img class="cruis_img" src="img/NAT2425_NAT2501_02_INS2501_EN.jpg" alt="INS2501" width="400px">
-                </a>
-            </figure>
-            <figure>
-                <figcaption>21.12.2024 - 10.01.2025</figcaption>
-                <a href="img/INS2500_EN.jpg">
-                    <img class="cruis_img" src="img/INS2500_EN.jpg" alt="INS2500_EN" width="400px">
-                </a>
-            </figure>
-            <figure>
-                <figcaption>05.12.2024 - 21.12.2024</figcaption>
-                <a href="img/INS2425_EN.jpg">
-                    <img class="cruis_img" src="img/INS2425_EN.jpg" alt="INS2524" width="400px">
-                </a>
-            </figure>
-            <figure>
-                <figcaption>20.11.2024 - 05.12.2024</figcaption>
-                <a href="img/INS2424_EN.jpg">
-                    <img class="cruis_img" src="img/INS2424_EN.jpg" alt="INS2424_EN" width="400px">
-                </a>
-            </figure>
-            <figure>
-                <figcaption>04.11.2024 - 20.11.2024</figcaption>
-                <a href="img/ins2423_en_neu.jpg">
-                    <img class="cruis_img" src="img/ins2423_en_neu.jpg" alt="INS2423_EN" width="400px">
-                </a>
-            </figure>
+            <h2>Last Cruises</h2>
 
+            <div class="last_cruises_cards">
+                <div class="cruise_card">
+                    <a href="img/INS2502_EN.jpg">
+                        <img src="img/INS2502_EN.jpg" alt="INS2502_EN"></a>
+                    <div class="cruise_content">
+                        <h3>28.01.2025 - 02.03.2025</h3>
+                        <p>From Ushuaia, Argentinia to Lyttleton - Christchurch, New Zealand</p>
+                    </div>
+                </div>
+
+                <div class="cruise_card">
+                    <a href="img/NAT2425_NAT2501_02_INS2501_EN.jpg">
+                        <img src="img/NAT2425_NAT2501_02_INS2501_EN.jpg" alt="INS2501"></a>
+                    <div class="cruise_content">
+                        <h3>10.01.2025 - 28.01.2025</h3>
+                        <p>From Ushuaia, Argentinia to Ushuaia, Argentinia</p>
+                    </div>
+                </div>
+
+                <div class="cruise_card">
+                    <a href="img/INS2500_EN.jpg">
+                        <img src="img/INS2500_EN.jpg" alt="INS2500"></a>
+                    <div class="cruise_content">
+                        <h3>21.12.2024 - 10.01.2025</h3>
+                        <p>From Ushuaia, Argentinia to Ushuaia, Argentinia</p>
+                    </div>
+                </div>
+
+                <div class="cruise_card">
+                    <a href="img/INS2425_EN.jpg">
+                        <img src="img/INS2425_EN.jpg" alt="INS2524"></a>
+                    <div class="cruise_content">
+                        <h3>05.12.2024 - 21.12.2024</h3>
+                        <p>From Ushuaia, Argentinia to Ushuaia, Argentinia</p>
+                    </div>
+                </div>
+
+                <div class="cruise_card">
+                    <a href="img/INS2424_EN.jpg">
+                        <img src="img/INS2424_EN.jpg" alt="IINS2424_EN"></a>
+                    <div class="cruise_content">
+                        <h3>20.11.2024 - 05.12.2024</h3>
+                        <p>From Valparaiso, Chile to Ushuaia, Argentinia</p>
+                    </div>
+                </div>
+
+                <div class="cruise_card">
+                    <a href="img/ins2423_en_neu.jpg">
+                        <img src="img/ins2423_en_neu.jpg" alt="INS2423_EN"></a>
+                    <div class="cruise_content">
+                        <h3>04.11.2024 - 20.11.2024</h3>
+                        <p>From Colon, Panama to Valparaiso, Chile</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <h2 class="world_map_heading">World Map</h2>
-        <!--Verlinkte World Map mit Orten die schon bereist wurden / ohne Figcaption-->
+
+
         <div class="world">
-            <a
-                href="https://map1.maploco.com/visited-countries/mine.php?c1=m8335a9n2a-gs9ojplm3c-co71p4a1w0-b3lf2s6wyw-2rvel86ips">
-                <img src="https://map1.maploco.com/visited-countries/ml/m8335a9n2a-gs9ojplm3c-co71p4a1w0-b3lf2s6wyw-2rvel86ips.gif"
-                    alt="Weltkarte mit besuchten Orten">
-            </a>
+            <h2>World Map</h2>
+            <div class="world_map">
+                <div class="world_map_content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque cum a nesciunt laborum sequi ab,
+                        aperiam autem tenetur pariatur. Illum cumque rerum aliquid tempore iure, quis quam rem neque
+                        accusantium.</p>
+                    <p>58 countries / 195 </p>
+                    <p>7 continents</p>
+                </div>
+                <a href="https://map1.maploco.com/visited-countries/mine.php?c1=m827ksgrgi-gs9okjn7rs-co7hhd5se8-b3lf2tfv58-2rvel86ips">
+                    <img src="https://map1.maploco.com/visited-countries/ml/m827ksgrgi-gs9okjn7rs-co7hhd5se8-b3lf2tfv58-2rvel86ips.gif"></a>
+            </div>
         </div>
-        <a href="#top" class="btn-top"> <!--Button um wieder nach oben zu kommen-->
-            <img src="img/Pfeil.png" alt="Pfeil nach oben">
-        </a>
+
     </main>
     <footer> <!--FOOTER-->
         <p>&copy; copyright by Claudia</p>

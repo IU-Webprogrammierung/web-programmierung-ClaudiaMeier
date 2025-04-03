@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(230, 230, 230);
     height: 100vh;
 }
@@ -10,7 +10,13 @@ h2 {
     margin: 0;
 }
 
-/*gallery special background*/
+.hero {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*gallery background*/
 body.gallery_bckgrnd {
     background-color: #05152C;
 }
@@ -239,12 +245,6 @@ footer a {
 
 /*BOOKS*/
 
-#hero {
-    max-height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-
 .current {
     background-color: #4D6C8A;
 }
@@ -252,29 +252,40 @@ footer a {
 .book_current {
     display: flex;
     margin: 0 auto;
-    gap: 30px;
+    width: 80%;
+    gap: 90px;
     align-items: center;
     padding: 50px;
 }
 
+
+.book_content p, 
+.recommends_content p {
+    font-size: 1.2em;
+}
+
 .book_latest {
+    width: 80%;
     display: flex;
     margin: 0 auto;
     align-items: center;
     padding: 50px;
-    gap: 50px;
+    gap: 90px;
 }
 
-.single_heading {
+.single_heading, 
+.recommends_content h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
     text-align: center;
 }
 
-.book_content {
-    padding: 50px;
-}
 
-#book_current_img {
+.book_current img, 
+.book_latest img {
     border-radius: 5px;
+    box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.64);
 }
 
 .recommends {
@@ -300,7 +311,8 @@ footer a {
     width: 250px;
     height: 370px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.64);
 }
 
 
@@ -341,12 +353,94 @@ footer a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.4);
 }
 
 
 
 
+/*CRUSIES*/
+
+.cruise {
+    background-color: #4D6C8A;
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.current_cruise img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+}
+
+.current_cruise_content {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.last_cruises_cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.last_cruises h2{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.cruise_card {
+    background-color: #4D6C8A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 25%;
+    box-shadow: 0px 4px 8px 0 #4d6b8ad7;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.cruise_card:hover {
+    box-shadow: 0 8px 16px 0 #4d6b8ad7;
+}
+
+.cruise_card img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.cruise_content {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.world {
+    background-color: #4D6C8A;
+}
+
+.world h2 {
+    text-align: center;
+    padding: 20px;
+}
+.world_map {
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.world_map img {
+    border-radius: 10px;
+}
 
 
 
@@ -401,12 +495,32 @@ footer a {
         width: 90%;
     }
 
-
     .book_current, 
     .book_latest  {
         flex-direction: column;
     }
 
+    .last_cruises_cards {
+        flex-direction: column;
+    }
+
+    .cruise_card {
+        padding: 20px;
+        width: inherit;
+    }
+
+    .cruise_content {
+        padding: 0;
+    }
+
+
+    .cruise {
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 20px;
+
+
+    }
 }
 
 @media (max-width: 560px) {
@@ -423,11 +537,6 @@ footer a {
         grid-column: span 1;
     }
 
-    .book_current, 
-    .book_latest, 
-    .book_content {
-        padding: 10px;
-    }
 }
 
 @media (max-width: 375px) {
