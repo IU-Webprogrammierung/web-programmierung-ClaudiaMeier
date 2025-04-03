@@ -443,6 +443,21 @@ footer a {
 }
 
 
+.legalnotice, .privacypolicy {
+    padding: 50px;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.legalnotice h2, .privacypolicy h2 {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
 
 
 @media(max-width: 950px) {

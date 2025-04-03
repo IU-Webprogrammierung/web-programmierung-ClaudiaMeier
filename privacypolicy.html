@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style_new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio - Claudia Meier</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar"> <!--MOBILE NAVIGATION-->
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#05152C">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="cruises.html">Cruises</a></li>
+                <li><a href="#contact_form">Contact</a></li>
+            </ul>
+            <ul>
+                <li class="nav_link"><a href="index.html">Portfolio</a></li> <!--DESKTOP NAVIGATION-->
+                <li class="hideOneMobile"><a href="index.html">About Me</a></li>
+                <li class="hideOneMobile"><a href="books.html">Books</a></li>
+                <li class="hideOneMobile"><a href="gallery.html">Gallery</a></li>
+                <li class="hideOneMobile"><a href="cruises.html">Cruises</a></li>
+                <li class="hideOneMobile"><a href="#contact_form">Contact</a></li>
+                <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#05152C">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar")
+                sidebar.style.display = "flex"
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector(".sidebar")
+                sidebar.style.display = "none"
+            }
+        </script>
+    </header>
+    <main>
+        <div class="privacypolicy">
+            <h2>Privacy Policy</h2>
+
+            <h3>04.04.2025</h3>
+
+            At [Your Name or Your Website], we are committed to protecting your privacy. This Privacy Policy explains
+            how we collect, use, and protect your personal information when you visit our website, [Your Website URL].
+
+            <h3> Information We Collect</h3>
+
+            <p>We may collect the following types of information:
+
+                Personal Information: This may include your name, email address, phone number, and any other information
+                you
+                provide to us voluntarily through forms, inquiries, or other interactions on our website.
+
+                Usage Data: We may collect data about how you use and interact with our website, such as IP addresses,
+                browser type, pages viewed, and duration of visits.</p>
+
+            <h3>2. How We Use Your Information</h3>
+
+            <p>We use the information we collect for the following purposes:</p>
+            <ul>
+                <li>To provide and maintain our website</li>
+                <li>To respond to your inquiries or requests </li>
+                <li>To improve our website and services</li>
+                <li>To send you information related to our website, if you have subscribed to our newsletter or other
+                    communications (you can unsubscribe at any time)</li>
+            </ul>
+            
+            <h3>3. Cookies</h3>
+
+            <p> Our website may use cookies to enhance your user experience. Cookies are small text files stored on your
+                device that help us analyze web traffic and improve your experience. You can adjust your browser
+                settings to
+                refuse cookies or alert you when cookies are being sent. However, if you do not accept cookies, some
+                features of the website may not work as intended.</p>
+
+            <h3>4. Sharing Your Information</h3>
+
+            <p> We do not sell or rent your personal information to third parties. We may share your information with
+                trusted third parties only in the following circumstances:
+
+                If required by law or legal process
+
+                To protect our rights, property, or safety, or the rights, property, or safety of others
+
+                If we engage third-party service providers to help us run our website (e.g., hosting, analytics)</p>
+
+            <h3>5. Data Security</h3>
+
+            <p>We take the security of your personal data seriously and implement reasonable measures to protect it.
+                However, please note that no method of transmission over the internet or method of electronic storage is
+                100% secure, and we cannot guarantee absolute security.</p>
+
+            <h3>6. Your Rights</h3>
+
+            <p>Depending on your location and applicable law, you may have the right to:</p>
+                <ul>
+                <li>Access, update, or delete your personal information</li>
+                <li>Object to the processing of your personal data</li>
+                <li>Withdraw consent at any time (if we process your data based on consent)</li>
+                <li>To exercise these rights, please contact us.</li>
+            </ul>
+
+            <h3>7. Third-Party Links</h3>
+
+            <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices
+                or
+                content of these external websites. Please review their privacy policies separately.</p>
+
+            <h3>8. Children's Privacy</h3>
+
+            <p>This website is not intended for use by individuals under the age of 16. We do not knowingly collect
+                personal
+                information from children. If we learn that we have inadvertently collected personal information from a
+                child under the age of 16, we will take steps to delete that information as soon as possible.</p>
+
+            <h3>9. Changes to This Privacy Policy</h3>
+
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an
+                updated
+                "Effective Date." We encourage you to review this Privacy Policy periodically to stay informed about how
+                we
+                are protecting your information.</p>
+
+            <h3>10. Contact Us</h3>
+
+            <p>If you have any questions or concerns about this Privacy Policy or our practices regarding your personal
+                information, please contact us at:</p>
+
+                <p>[Your Name or Website Name]</p>
+                <p>[Your Address]</p>
+                <p>[Your Email Address]</p>
+                <p>[Your Phone Number, if applicable]</p>
+        </div>
+    </main>
+    <footer> <!--FOOTER-->
+        <p>&copy; copyright by Claudia</p>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <a href="legalnotice.html">Legal Notice</a>
+    </footer>
+
+</body>
+
+</html>

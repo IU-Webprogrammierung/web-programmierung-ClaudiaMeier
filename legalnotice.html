@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style_new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio - Claudia Meier</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar"> <!--MOBILE NAVIGATION-->
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#05152C">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="cruises.html">Cruises</a></li>
+                <li><a href="#contact_form">Contact</a></li>
+            </ul>
+            <ul>
+                <li class="nav_link"><a href="index.html">Portfolio</a></li> <!--DESKTOP NAVIGATION-->
+                <li class="hideOneMobile"><a href="index.html">About Me</a></li>
+                <li class="hideOneMobile"><a href="books.html">Books</a></li>
+                <li class="hideOneMobile"><a href="gallery.html">Gallery</a></li>
+                <li class="hideOneMobile"><a href="cruises.html">Cruises</a></li>
+                <li class="hideOneMobile"><a href="#contact_form">Contact</a></li>
+                <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#05152C">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar")
+                sidebar.style.display = "flex"
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector(".sidebar")
+                sidebar.style.display = "none"
+            }
+        </script>
+    </header>
+    <main>
+        <div class="legalnotice">
+            <h2> Information in accordance with Section 5 of the Telemedia Act (TMG):</h2>
+            <p>Name: Claudia Meier</p>
+            <p>Address: Musterstr. 1, 00000 Musterstadt</p>
+            <p>Email Address: claudia.meier@iu-study.org </p>
+            <p> Phone Number: +49 111 222 333 444</p>
+            <p>Website: [Your Website URL] </p>
+
+            <p>Authorized Representative: Claudia Meier</p>
+
+            <p>VAT ID: [Your VAT Identification Number, if applicable]
+                Disclaimer:
+                The contents of this website have been created with the utmost care. However, we cannot guarantee the
+                accuracy, completeness, or current relevance of the content. As a service provider, we are responsible
+                for
+                our own content on this website according to general laws (Section 7, TMG). However, according to
+                Sections 8
+                to 10 of the TMG, we are not obligated to monitor transmitted or stored third-party information or to
+                investigate circumstances that suggest illegal activity.</p>
+
+            <p>Liability for Links:
+                Our website contains links to external websites of third parties, over which we have no control.
+                Therefore,
+                we cannot assume any responsibility for the content of these external websites. The respective provider
+                or
+                operator of the linked websites is always responsible for their content.</p>
+
+            <p>Copyright:
+                The content and works created by the operators of this website are subject to German copyright law.
+                Contributions by third parties are marked as such. The reproduction, modification, distribution, or any
+                type
+                of exploitation outside the limits of copyright law requires the written consent of the respective
+                author or
+                creator.</p>
+        </div>
+    </main>
+    <footer> <!--FOOTER-->
+        <p>&copy; copyright by Claudia</p>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <a href="legalnotice.html">Legal Notice</a>
+    </footer>
+
+</body>
+
+</html>
