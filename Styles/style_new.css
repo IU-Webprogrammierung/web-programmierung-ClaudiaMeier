@@ -439,6 +439,7 @@ footer a {
 }
 
 .world_map img {
+    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -533,8 +534,16 @@ footer a {
         gap: 10px;
         flex-wrap: wrap;
         padding: 20px;
+    }
 
+    .legalnotice, .privacypolicy {
+        padding: 20px;
+        margin: auto;
+        width: 90%;
+    }
 
+    .world_map {
+        flex-direction: column;
     }
 }
 

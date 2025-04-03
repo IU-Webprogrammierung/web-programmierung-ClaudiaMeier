@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style_new.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <title>Portfolio - Claudia Meier</title>
 </head>
 
@@ -14,7 +15,7 @@
         <nav>
             <ul class="sidebar"> <!--MOBILE NAVIGATION-->
                 <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                            viewBox="0 -960 960 960" width="24px" fill="#05152C">
+                            viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg></a></li>
@@ -22,7 +23,7 @@
                 <li><a href="books.html">Books</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="cruises.html">Cruises</a></li>
-                <li><a href="#contact_form">Contact</a></li>
+                <li><a href="index.html#contact_form">Contact</a></li>
             </ul>
             <ul>
                 <li class="nav_link"><a href="index.html">Portfolio</a></li> <!--DESKTOP NAVIGATION-->
@@ -30,24 +31,15 @@
                 <li class="hideOneMobile"><a href="books.html">Books</a></li>
                 <li class="hideOneMobile"><a href="gallery.html">Gallery</a></li>
                 <li class="hideOneMobile"><a href="cruises.html">Cruises</a></li>
-                <li class="hideOneMobile"><a href="#contact_form">Contact</a></li>
+                <li class="hideOneMobile"><a href="index.html#contact_form">Contact</a></li>
                 <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#05152C">
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg></a></li>
             </ul>
         </nav>
-        <script>
-            function showSidebar() {
-                const sidebar = document.querySelector(".sidebar")
-                sidebar.style.display = "flex"
-            }
-            function hideSidebar() {
-                const sidebar = document.querySelector(".sidebar")
-                sidebar.style.display = "none"
-            }
-        </script>
     </header>
+
     <main>
         <div class="privacypolicy">
             <h2>Privacy Policy</h2>
