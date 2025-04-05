@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
     background-color: rgb(230, 230, 230);
-    height: 100vh;
 }
 
 h2 {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
 }
 
 .hero {
@@ -15,12 +25,6 @@ h2 {
     width: 100%;
     object-fit: cover;
 }
-
-/*gallery background*/
-body.gallery_bckgrnd {
-    background-color: #05152C;
-}
-
 
 /*NAVIGATION*/
 nav {
@@ -58,11 +62,6 @@ nav a:hover {
     background-color: #869CB5;
 }
 
-nav li:first-child {
-    margin-right: auto;
-}
-
-
 /*NAVIGATION  FOR MOBILE */
 .sidebar {
     position: fixed;
@@ -89,146 +88,6 @@ nav li:first-child {
     display: none;
 }
 
-
-
-
-.about_me_content {
-    padding: 50px;
-}
-
-
-.gallery_preview {
-    background-color: #4D6C8A;
-    box-shadow: 0px 0px 10px #5b527198;
-}
-
-.gallery_preview h2 {
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2rem;
-    padding: 30px;
-    text-align: center;
-}
-
-.books_preview h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2rem;
-    padding: 30px;
-    text-align: center;
-}
-
-.gallery_preview img,
-.books_pictures img {
-    transform: scale(0.9);
-    object-fit: cover;
-    max-width: 350px;
-    border-radius: 5PX;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.gallery_pictures,
-.books_pictures {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 30px;
-}
-
-.content_text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.button_link {
-    font-size: 1.2rem;
-    background-color: #05152C;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-.button_link a {
-    color: white;
-    text-decoration: none;
-}
-
-.button_link:hover {
-    background-color: #05152c7e;
-}
-
-
-
-
-
-
-
-
-
-.contact_content {
-    background-color: #4D6C8A;
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.content {
-    width: 50%;
-    padding: 20px;
-}
-
-.content a {
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-.content h2 {
-    text-align: center;
-}
-
-#contact_form {
-    padding: 20px;
-    border: 1px solid #05152C;
-    border-radius: 10px;
-    font-size: 1.2em;
-}
-
-input[type=text],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-input[type=submit] {
-    width: 100%;
-    padding: 5px;
-    font-size: 1.2rem;
-    color: white;
-    background-color: #05152C;
-    border-radius: 10px;
-}
-
-input[type=submit]:hover {
-    background-color: #05152c7e;
-
-}
-
-.social_media {
-    display: block;
-    text-align: center;
-}
-
-.social_media a {
-    padding-top: 20px;
-    font-size: 40px;
-    color: #F7D2CF;
-}
-
-
 footer {
     background-color: #4D6C8A;
     display: flex;
@@ -242,208 +101,6 @@ footer a {
     color: black;
 }
 
-
-/*BOOKS*/
-
-.current {
-    background-color: #4D6C8A;
-}
-
-.book_current {
-    display: flex;
-    margin: 0 auto;
-    width: 80%;
-    gap: 90px;
-    align-items: center;
-    padding: 50px;
-}
-
-
-.book_content p, 
-.recommends_content p {
-    font-size: 1.2em;
-}
-
-.book_latest {
-    width: 80%;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    padding: 50px;
-    gap: 90px;
-}
-
-.single_heading, 
-.recommends_content h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.4em;
-    font-weight: 400;
-    text-align: center;
-}
-
-
-.book_current img, 
-.book_latest img {
-    border-radius: 5px;
-    box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.64);
-}
-
-.recommends {
-    background-color: #4D6C8A;
-}
-
-.recommends_split {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.recommends_content {
-    width: 33%;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.recommends_content img {
-    width: 250px;
-    height: 370px;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.64);
-}
-
-
-
-.book_headline {
-    text-align: center;
-    padding: 20px;
-}
-
-
-
-.gallery {
-    padding: 20px;
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 250px;
-    grid-auto-flow: dense;
-}
-
-.v-stretch {
-    grid-row: span 2;
-}
-
-.h-stretch {
-    grid-column: span 2;
-}
-
-.big-stretch {
-    grid-row: span 2;
-    grid-column: span 2;
-}
-
-.gallery div img {
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-
-/*CRUSIES*/
-
-.cruise {
-    background-color: #4D6C8A;
-    display: flex;
-    padding: 50px;
-    gap: 50px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.current_cruise img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
-}
-
-.current_cruise_content {
-    text-align: center;
-    font-size: 1.2em;
-}
-
-
-.last_cruises_cards {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.last_cruises h2{
-    text-align: center;
-    padding: 20px;
-}
-
-
-.cruise_card {
-    background-color: #4D6C8A;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    width: 25%;
-    box-shadow: 0px 4px 8px 0 #4d6b8ad7;
-    transition: 0.3s;
-    margin-bottom: 30px;
-}
-
-.cruise_card:hover {
-    box-shadow: 0 8px 16px 0 #4d6b8ad7;
-}
-
-.cruise_card img {
-    border-radius: 10px;
-    max-width: 100%;
-}
-
-.cruise_content {
-    padding: 20px;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.world {
-    background-color: #4D6C8A;
-}
-
-.world h2 {
-    text-align: center;
-    padding: 20px;
-}
-.world_map {
-    display: flex;
-    padding: 50px;
-    gap: 50px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.world_map img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-
 .legalnotice, .privacypolicy {
     padding: 50px;
     margin: auto;
@@ -453,15 +110,16 @@ footer a {
     font-size: larger;
 }
 
-.legalnotice h2, .privacypolicy h2 {
+.legalnotice h2,
+.privacypolicy h2 {
     padding-bottom: 50px;
     text-align: center;
 }
 
 
 
-
-@media(max-width: 950px) {
+/*BREAKPOINT FOR TABLET SIZE*/
+@media(max-width: 768px) {
     .hideOneMobile {
         display: none;
     }
@@ -470,133 +128,19 @@ footer a {
         display: block;
     }
 
-    p {
-        margin: 0;
-    }
-
-    .contact_content {
-        flex-wrap: wrap;
-        gap: 0;
-    }
-
-    .content {
-        width: 100%;
-    }
-
-    .gallery_pictures,
-    .books_pictures {
-        padding: 10px;
-    }
-
-    .mobile_hide_first {
-        display: none;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    .gallery_preview h2,
-    .books_preview h2 {
-        font-size: 1.5rem;
-    }
-
-    .recommends_split {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .recommends_content {
-        width: 90%;
-    }
-
-    .book_current, 
-    .book_latest  {
-        flex-direction: column;
-    }
-
-    .last_cruises_cards {
-        flex-direction: column;
-    }
-
-    .cruise_card {
-        padding: 20px;
-        width: inherit;
-    }
-
-    .cruise_content {
-        padding: 0;
-    }
-
-
-    .cruise {
-        gap: 10px;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-
-    .legalnotice, .privacypolicy {
+    .legalnotice,
+    .privacypolicy {
         padding: 20px;
         margin: auto;
         width: 90%;
     }
-
-    .world_map {
-        flex-direction: column;
-    }
 }
 
-@media (max-width: 560px) {
-    .v-stretch {
-        grid-row: span 1;
-    }
 
-    .h-stretch {
-        grid-column: span 1;
-    }
-
-    .big-stretch {
-        grid-row: span 1;
-        grid-column: span 1;
-    }
-
-}
-
+/*REDUCE PICTURE SIZE AND REMOVE PICTURES BY BOOKS PAGES */
 @media (max-width: 375px) {
     .mobile_hide {
         display: none;
     }
-
-    .sidebar {
-        width: 100%;
-    }
-
-    .gallery_preview img,
-    .books_pictures img {
-        max-width: 90%;
-    }
-
-    .book_current img, 
-    .book_latest img, 
-    .recommends_content img {
-        display: none;
-    }
-
-
-}
-
-@media (max-width: 300px) {
-    .nav_link {
-        display: none;
-    }
-
-    .gallery_preview img,
-    .books_pictures img {
-        display: none;
-    }
-
-
-
 
 }

@@ -1,0 +1,109 @@
+.cruise {
+    background-color: #4D6C8A;
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.current_cruise img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+}
+
+.current_cruise_content {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.last_cruises_cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.last_cruises h2{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.cruise_card {
+    background-color: #4D6C8A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 25%;
+    box-shadow: 0px 4px 8px 0 #4d6b8ad7;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.cruise_card:hover {
+    transform: translateY(-20px);
+}
+
+.cruise_card img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.cruise_content {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.world {
+    background-color: #4D6C8A;
+}
+
+.world h2 {
+    text-align: center;
+    padding: 20px;
+}
+.world_map {
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.world_map img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/*BREAKPOINT FOR TABLET SIZE*/
+@media (max-width: 768px) {
+
+    .last_cruises_cards {
+        flex-direction: column;
+    }
+
+    .cruise_card {
+        padding: 20px;
+        width: inherit;
+    }
+
+    .cruise_content {
+        padding: 0;
+    }
+
+    .cruise {
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .world_map {
+        flex-direction: column;
+    }
+}
