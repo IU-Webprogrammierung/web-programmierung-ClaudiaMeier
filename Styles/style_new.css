@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
 body {
     margin: auto;
     font-family: "Open Sans", sans-serif;
@@ -7,7 +8,7 @@ body {
 }
 
 h2 {
-    font-family: 'Courier New', Courier, monospace;
+    
     margin: 0;
     font-size: 1.5em;
     text-align: center;

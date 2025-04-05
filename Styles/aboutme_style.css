@@ -1,5 +1,9 @@
 .about_me_content {
     padding: 50px;
+    font-size: larger;
+    width: 80%;
+    text-align: center;
+    margin: auto;
 }
 
 .gallery_preview {
@@ -9,30 +13,12 @@
 
 .gallery_preview h2 {
     color: white;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
     padding: 30px;
     text-align: center;
 }
 
-.books_preview h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2rem;
-    padding: 30px;
-    text-align: center;
-}
-
-.gallery_preview img,
-.books_pictures img {
-    transform: scale(0.9);
-    object-fit: cover;
-    max-width: 350px;
-    border-radius: 5PX;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.gallery_pictures,
-.books_pictures {
+.gallery_pictures {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -45,20 +31,51 @@
     align-items: center;
 }
 
-.button_link {
-    font-size: 1.2rem;
-    background-color: #05152C;
-    border-radius: 10px;
-    padding: 15px;
+.content_text p {
+    padding: 0px 100px;
+    text-align: center;
+    font-size: 1.2em;
 }
 
-.button_link a {
-    color: white;
-    text-decoration: none;
+.gallery_preview img {
+    object-fit: cover;
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
 }
 
-.button_link:hover {
-    background-color: #05152c7e;
+.gallery_preview img:hover {
+    transform: translateY(-20px);
+}
+
+
+.books_preview {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.books_preview_content {
+    display: flex;
+    padding: 50px;
+    gap: 500px;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.books_preview_content img {
+    object-fit: cover;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.books_preview_content img:hover {
+    transform: translateY(-20px);
 }
 
 .contact_content {
@@ -72,6 +89,8 @@
 
 .content {
     padding: 20px;
+    font-size: larger;
+    text-align: center;
 }
 
 .content a {
@@ -159,6 +178,7 @@ input[type=submit]:hover {
         max-width: 90%;
     }
 }
+
 /*REMOVE IMAGES ON SMALLER SCREENS*/
 @media (max-width: 300px) {
 

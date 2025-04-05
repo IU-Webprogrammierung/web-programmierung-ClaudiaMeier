@@ -15,89 +15,94 @@
     <header>
         <nav>
             <ul class="sidebar"> <!--MOBILE NAVIGATION-->
-                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#05152C"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#05152C">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="cruises.html">Cruises</a></li>
                 <li><a href="#contact_form">Contact</a></li>
             </ul>
-            <ul>    <!--DESKTOP NAVIGATION-->
+            <ul> <!--DESKTOP NAVIGATION-->
                 <li class="hideOneMobile"><a href="index.html">About Me</a></li>
                 <li class="hideOneMobile"><a href="books.html">Books</a></li>
                 <li class="hideOneMobile"><a href="gallery.html">Gallery</a></li>
                 <li class="hideOneMobile"><a href="cruises.html">Cruises</a></li>
                 <li class="hideOneMobile"><a href="#contact_form">Contact</a></li>
-                <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#05152C"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#05152C">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-      <img src="img/background2.jpeg" class="hero" alt="drone shot from aucklands city">
+        <img src="img/background2.jpeg" class="hero" alt="drone shot from aucklands city">
         <div class="about_me_content">
-            <h1>Hi! I'm Claudia!</h1>  <!--CONTENT HINZUFÜGEN-->
-            <p>This website is part of and modul from
-                Here you will find some pictures, which I took while I am traveling around the world while working on a
-                ship.</p>
-            <p>
-                My passion is to take picutres and capturing moments. Therefore I am using my Sony Alpha 7IV with a
-                24-105mm lense and my DJI Mini 4 Pro.
-                I am currently working on an expedition cruise ship. Ich habe eine große Leidenschaft fürs Fotografieren
-                - sowohl mit der Kamera als
-                auch mit meiner Drohne.
-                Es fasziniert mich, die Welt aus unterschiedlichen Perspektiven festzuhalten und einzigartige
-                Momente
-                einzufangen. Hier findest Du Inhalte zu Büchern, die ich aktuell lese, gelesen habe und meine
-                Empfehlungen,
-                meine Liebe zur Fotografie sowie Reiseberichte über Routen, die ich mit einem
-                Expeditionskreuzfahrtschiff gemacht habe.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui praesentium provident, laudantium tempora ipsa maxime eligendi quo optio excepturi illum iusto quos voluptatem facilis. Laudantium tempore saepe ipsam at nostrum.</p>
+            <h1>Hi! I'm Claudia!</h1>
+            <h2>Welcome to my Portfolio</h2> <!--CONTENT HINZUFÜGEN-->
+            <p>This website highlights my creative journey and the projects I'm passionate about. As someone who loves
+                exploring new places, I find joy in capturing the world from unique perspectives. Whether it's through
+                photography with my Sony Alpha 7V or aerial shots from my DJI Mini 4 Pro, I aim to preserve the beauty
+                of each moment.
+
+                Within these pages, you'll find a mix of my personal work—ranging from my photography gallery to book
+                recommendations, along with my experiences and travel inspirations. This portfolio is a part of a
+                project from the IU International University for Applied Sciences, built with HTML and CSS.</p>
+            <p>Feel free to explore!</p>
         </div>
-        
-        <section class="gallery_preview">
+
+        <div class="gallery_preview">
             <div class="content_text">
                 <h2>Just here to see some pictures?</h2>
-                <a href="gallery.html">Gallery</a> 
+                <p>Step into my gallery! This space is filled with images that represent my creativity, ideas, and
+                    inspirations. From captivating photography to artistic designs, each picture has its own story to
+                    tell. Feel free to explore, and let each image take you on a visual journey.</p>
             </div>
             <div class="gallery_pictures">
-                <img class="mobile_hide_first" src="img/gallery_img/Antarctic.jpg" alt=""> <!--ALT TAGS NOCH HINZUFÜGEN-->
-                <img class="mobile_hide" src="img/gallery_img/background_img.jpg" alt="">
-                <img src="img/gallery_img/Papua_Neuguinea_2.jpg" alt="">
+                <a href="gallery.html">
+                    <img class="mobile_hide_first" src="img/gallery_img/Antarctic.jpg" alt=""></a>
+                <a href="gallery.html"> <!--ALT TAGS NOCH HINZUFÜGEN-->
+                    <img class="mobile_hide" src="img/gallery_img/background_img.jpg" alt=""></a>
+                <a href="gallery.html">
+                    <img src="img/gallery_img/Papua_Neuguinea_2.jpg" alt=""></a>
             </div>
-        </section>
+        </div>
 
-        <section class="books_preview">
-            <div class="content_text">
+        <div class="books_preview">
+            <div>
                 <h2>Want to get some book recommendations?</h2>
-                <a href="books.html">Books</a>
             </div>
-            <div class="books_pictures">
-                <img class="mobile_hide_first" src="img/gallery_img/Antarctic.jpg" alt=""> <!--ALT TAGS NOCH HINZUFÜGEN-->
-                <img class="mobile_hide" src="img/gallery_img/background_img.jpg" alt="">
-                <img src="img/gallery_img/Papua_Neuguinea_2.jpg" alt="">
+            <div class="books_preview_content">
+                <p>Whether you're a passionate reader or just looking for something new to dive into, I've gathered a
+                    selection of books that have inspired me, helped me grow, or simply entertained me. From
+                    thought-provoking non-fiction to immersive fiction, these recommendations span a wide range of
+                    genres. Each book offers something unique, whether it's expanding your knowledge, sparking
+                    creativity, or just providing a good escape.</p>
+                <a href="books.html"><img src="img/books_preview_2.jpg" alt="clipart of books with a cup of tea"></a>
             </div>
-        </section>
+            <h2>Feel free to explore and find your next great read!</h2>
+        </div>
 
         <div class="contact_content">
             <div class="content">
                 <h2>Lets get in contact &#128151;</h2> <!--CONTENT HINZUFÜGEN-->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus at, quidem obcaecati
-                    assumenda quam,
-                    officiis accusamus minus ut culpa dignissimos atque ipsum distinctio libero! Iure
-                    eveniet eos saepe
-                    illum dignissimos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus at, quidem obcaecati
-                    assumenda quam,
-                    officiis accusamus minus ut culpa dignissimos atque ipsum distinctio libero! Iure
-                    eveniet eos saepe
-                    illum dignissimos.</p>
-                    <div class="social_media">
+                <p>I'd love to hear from you! Whether you have questions about my work, want to collaborate, or simply
+                    want to chat about photography, travel, or anything else, feel free to reach out. Your thoughts and
+                    feedback are always welcome, and I'm happy to connect.</p>
+
+                    <p>Fill out the form below, and I'll get back to you as soon as possible. Looking forward to hearing
+                    from you!</p>
+
+                <div class="social_media">
                     <h2>Follow Me</h2>
-                <a href="#" class="fa">&#xf16d;</a>
-                <a href="#" class="fa">&#xf0e1;</a>
-                    </div>
+                    <a href="#" class="fa">&#xf16d;</a>
+                    <a href="#" class="fa">&#xf0e1;</a>
+                </div>
             </div>
 
             <div id="contact_form">

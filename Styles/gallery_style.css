@@ -1,5 +1,5 @@
 body{
-    background-color: #000000;
+    background-color: #05152C;
 }
 
 .gallery {
@@ -33,7 +33,7 @@ body{
     object-fit: cover;
 }
 
-
+/*CHANGE GALLERY LAYOUT*/
 @media (max-width: 560px) {
     .v-stretch {
         grid-row: span 1;
