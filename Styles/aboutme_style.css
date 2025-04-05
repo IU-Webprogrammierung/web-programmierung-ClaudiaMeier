@@ -1,6 +1,6 @@
 .about_me_content {
     padding: 50px;
-    font-size: larger;
+    font-size: 1.2rem;
     width: 80%;
     text-align: center;
     margin: auto;
@@ -20,8 +20,9 @@
 
 .gallery_pictures {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 20px   ;
     padding: 30px;
 }
 
@@ -42,13 +43,14 @@
     width: 350px;
     height: 200px;
     object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.329);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
 }
 
 .gallery_preview img:hover {
-    transform: translateY(-20px);
+    transform: scale(1.2);
 }
 
 
@@ -60,10 +62,13 @@
 
 .books_preview_content {
     display: flex;
+
+    flex-direction: column;
     padding: 50px;
-    gap: 500px;
+    gap: 50px;
     align-items: center;
     font-size: 1.2em;
+    text-align: center;
 }
 
 .books_preview_content img {
@@ -75,7 +80,7 @@
 }
 
 .books_preview_content img:hover {
-    transform: translateY(-20px);
+    transform: scale(1.2);
 }
 
 .contact_content {
@@ -89,7 +94,7 @@
 
 .content {
     padding: 20px;
-    font-size: larger;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -146,6 +151,13 @@ input[type=submit]:hover {
 /*BREAKPOINT FOR TABLET SIZE*/
 @media (max-width: 768px) {
 
+    .content_text p {
+        padding: 0px 10px;
+    }
+    .about_me_content {
+        padding: 10px;
+    }
+
     .contact_content {
         flex-wrap: wrap;
         gap: 0;
@@ -154,6 +166,7 @@ input[type=submit]:hover {
     .gallery_pictures,
     .books_pictures {
         padding: 10px;
+        gap: 0;
     }
 
     .mobile_hide_first {
@@ -168,22 +181,32 @@ input[type=submit]:hover {
     .books_preview h2 {
         font-size: 1.5rem;
     }
-}
 
-/*REDUCE IMAGE SIZE ON SMALLER SCREENS*/
-@media (max-width: 375px) {
-
-    .gallery_preview img,
-    .books_pictures img {
-        max-width: 90%;
+    .books_preview,
+    .books_preview_content {
+        padding: 10px;
+        gap: 10px;
     }
 }
 
-/*REMOVE IMAGES ON SMALLER SCREENS*/
-@media (max-width: 300px) {
+/*REDUCE PADDING SIZE ON SMALLER SCREENS*/
+@media (max-width: 375px) {
 
+    .about_me_content {
+        padding: 10px;
+    }
+
+    .content_text p {
+        padding: 10px;
+    }
+
+}
+
+/*REMOVE IMAGES ON SMALLER SCREENS*/
+@media (max-width: 350px) {
     .gallery_preview img,
-    .books_pictures img {
+    .books_pictures img, 
+    .books_preview_content img {
         display: none;
     }
 }
