@@ -26,7 +26,8 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
-.last_cruises h2{
+
+.last_cruises h2 {
     text-align: center;
     padding: 20px;
 }
@@ -68,18 +69,30 @@
     text-align: center;
     padding: 20px;
 }
+
 .world_map {
     display: flex;
-    padding: 50px;
+    padding: 20px;
     gap: 50px;
     justify-content: space-evenly;
     align-items: center;
+    font-size: 1.2em;
 }
 
 .world_map img {
     max-width: 100%;
     border-radius: 10px;
 }
+
+.world_counting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+    font-size: 2rem;
+    color: yellow;
+}
+
 
 /*BREAKPOINT FOR TABLET SIZE*/
 @media (max-width: 768px) {
