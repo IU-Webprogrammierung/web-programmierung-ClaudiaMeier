@@ -5,7 +5,8 @@
     filter: brightness(0.5);
 }
 .cruise {
-    background-color: #4D6C8A;
+    background-color: #023047;
+    color: white;
     display: flex;
     padding: 50px;
     gap: 50px;
@@ -41,7 +42,8 @@
 
 
 .cruise_card {
-    background-color: #4D6C8A;
+    background-color: #023047;
+    color: white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -69,7 +71,8 @@
 }
 
 .world {
-    background-color: #4D6C8A;
+    background-color: #023047;
+    color: white;
 }
 
 .world h2 {

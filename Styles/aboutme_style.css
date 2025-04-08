@@ -107,7 +107,6 @@
     font-size: 1.2em;
     border-radius: 10px;
     color: white;
-    text-align: center;
 }
 
 
@@ -119,7 +118,9 @@ textarea {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
+label {
+    padding-top: 20px;
+}
 input[type=submit] {
     padding: 10px;
     font-size: 1.2rem;
