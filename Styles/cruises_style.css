@@ -1,3 +1,9 @@
+.hero {
+    max-height: 480px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
 .cruise {
     background-color: #4D6C8A;
     display: flex;
@@ -26,6 +32,7 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
+
 
 .last_cruises h2 {
     text-align: center;

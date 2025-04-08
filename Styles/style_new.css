@@ -19,16 +19,11 @@ h3 {
     text-align: center;
 }
 
-.hero {
-    max-height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
 
 /*NAVIGATION*/
 nav {
     margin: 0;
-    background-color: #4D6C8A;
+    background-color: #023047;
 }
 
 nav ul {
@@ -51,8 +46,8 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: #F7D2CF;
-    font-size: larger;
+    color: #FFFFFF;
+    font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -88,16 +83,16 @@ nav a:hover {
 }
 
 footer {
-    background-color: #4D6C8A;
+    background-color: #023047;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    color: #FFFFFF;
 }
 
 footer a {
     text-decoration: none;
-    color: black;
+    color: #FFFFFF;
 }
 
 .legalnotice, .privacypolicy {
