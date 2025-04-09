@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #869CB5;
+    background-color: #7091a1ab;;
 }
 
 
@@ -131,7 +131,7 @@ footer a {
   
   #back_btn:hover {
     transform: scale(1.5);
-    background-color: rgba(85, 85, 85, 0.671)1a1;
+    background-color: #7091a1ab;
   }
 
 

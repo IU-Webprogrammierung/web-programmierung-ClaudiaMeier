@@ -22,7 +22,6 @@ document.addEventListener("click", function(event) {
 //BACK TO TOP BUTTON
 let mybutton = document.getElementById("back_btn");
 
-
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -34,6 +33,8 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({
+   top: 0,
+   behavior: "smooth"
+  });
 }
