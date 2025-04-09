@@ -126,12 +126,12 @@ input[type=submit] {
     padding: 10px;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
-    background-color: #fdb0d4;
+    background-color: #991045;
     border-radius: 10px;
 }
 
 input[type=submit]:hover {
-    background-color: #f7d2cfdc;
+    background-color: #99104598;
 }
 
 .social_media {
@@ -141,7 +141,7 @@ input[type=submit]:hover {
 
 .social_media a {
     font-size: 40px;
-    color: #fdb0d4;
+    color: #991045;
 }
 
 /*BREAKPOINT FOR TABLET SIZE*/
