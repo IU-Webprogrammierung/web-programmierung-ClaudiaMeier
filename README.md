@@ -11,7 +11,7 @@ The website is designed to share interesting information about myself and is ful
 - Flexbox and Grid: I used Flexbox and/or Grid to ensure a flexible and organized layout of the content.
 
 ## *Page Structure*
-- About Me: The landing page with a brief introduction about me.
+- About Me: The landing page with a short introduction about me.
 
 - Books: An overview of my favorite books and reading interests.
 
