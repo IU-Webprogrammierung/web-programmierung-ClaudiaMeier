@@ -84,12 +84,15 @@
 .contact_content {
     background-color: #023047;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
     padding: 20px;
+    gap: 50px;
 }
 
 .content {
+    max-width: 50%;
     color: white;
     padding: 20px;
     font-size: 1.2rem;
@@ -134,9 +137,6 @@ input[type=submit]:hover {
     background-color: #99104598;
 }
 
-input:focus, textarea:focus {
-    background-color: lightblue
-}
 
 .social_media {
     display: block;
@@ -193,6 +193,8 @@ input.error {
         padding: 10px;
         gap: 10px;
     }
+    .content {
+        max-width: 90%
 }
 
 /*REDUCE PADDING SIZE ON SMALLER SCREENS*/
