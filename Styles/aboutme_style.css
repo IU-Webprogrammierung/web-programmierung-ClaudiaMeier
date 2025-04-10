@@ -134,6 +134,10 @@ input[type=submit]:hover {
     background-color: #99104598;
 }
 
+input:focus, textarea:focus {
+    background-color: lightblue
+}
+
 .social_media {
     display: block;
     text-align: center;
@@ -142,6 +146,17 @@ input[type=submit]:hover {
 .social_media a {
     font-size: 40px;
     color: #991045;
+}
+
+.errorDiv {
+    color: red;
+    font-size: 0.6em;
+    white-space: pre-wrap;
+}
+
+input.error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
 }
 
 /*BREAKPOINT FOR TABLET SIZE*/
