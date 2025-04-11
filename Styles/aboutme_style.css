@@ -129,12 +129,12 @@ input[type=submit] {
     padding: 10px;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
-    background-color: #991045;
+    background-color: #7091a1;
     border-radius: 10px;
 }
 
 input[type=submit]:hover {
-    background-color: #99104598;
+    background-color: #7091a1ab;
 }
 
 
@@ -145,8 +145,10 @@ input[type=submit]:hover {
 
 .social_media a {
     font-size: 40px;
-    color: #991045;
+    color: #7091a1;
 }
+
+/*Contact Form Validation*/
 
 .errorDiv {
     color: red;
