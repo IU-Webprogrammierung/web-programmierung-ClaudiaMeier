@@ -42,7 +42,6 @@
     object-fit: cover;
     width: 350px;
     height: 200px;
-    object-fit: cover;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.329);
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
@@ -52,7 +51,6 @@
 .gallery_preview img:hover {
     transform: scale(1.2);
 }
-
 
 .books_preview {
     display: flex;
@@ -137,7 +135,6 @@ input[type=submit]:hover {
     background-color: #7091a1ab;
 }
 
-
 .social_media {
     display: block;
     text-align: center;
@@ -148,8 +145,7 @@ input[type=submit]:hover {
     color: #7091a1;
 }
 
-/*Contact Form Validation*/
-
+/*Fot Contact Form Validation*/
 .errorDiv {
     color: red;
     font-size: 0.6em;

@@ -90,6 +90,7 @@ nav a:hover {
     display: none;
 }
 
+/*FOOTER*/
 footer {
     background-color: #023047;
     display: flex;
@@ -101,21 +102,6 @@ footer {
 footer a {
     text-decoration: none;
     color: #FFFFFF;
-}
-
-.legalnotice, .privacypolicy {
-    padding: 50px;
-    margin: auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    font-size: larger;
-}
-
-.legalnotice h2,
-.privacypolicy h2 {
-    padding-bottom: 50px;
-    text-align: center;
 }
 
 /*Back to top Button*/
@@ -139,6 +125,22 @@ footer a {
   }
 
 
+.legalnotice, .privacypolicy {
+    padding: 50px;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.legalnotice h2,
+.privacypolicy h2 {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
 /*BREAKPOINT FOR TABLET SIZE*/
 @media(max-width: 768px) {
     .hideOneMobile {
@@ -157,11 +159,3 @@ footer a {
     }
 }
 
-
-/*REDUCE PICTURE SIZE AND REMOVE PICTURES BY BOOKS PAGES */
-@media (max-width: 375px) {
-    .mobile_hide {
-        display: none;
-    }
-
-}

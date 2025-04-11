@@ -25,7 +25,6 @@
     font-size: 1.2em;
 }
 
-
 .last_cruises_cards {
     display: flex;
     justify-content: space-evenly;
@@ -34,12 +33,10 @@
     flex-direction: row;
 }
 
-
 .last_cruises h2 {
     text-align: center;
     padding: 20px;
 }
-
 
 .cruise_card {
     background-color: #023047;
